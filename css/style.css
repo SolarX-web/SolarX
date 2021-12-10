@@ -1,3 +1,7 @@
+body {
+    margin: 0;
+}
+
 /*-------------------|Scrollbar|-------------------*/
 ::-webkit-scrollbar {
     width: 10px;
@@ -10,4 +14,9 @@
 
 ::-webkit-scrollbar-thumb:hover {
     background: #646464;
+}
+
+/*-------------------|Header|----------------------*/
+header {
+    box-shadow: 3px 0px 3px;
 }
