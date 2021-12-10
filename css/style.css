@@ -1,4 +1,9 @@
-/*-------------------|Scrollbar|-------------------*/
+/*-------------------| Pseudo |-------------------*/
+::selection {
+    background: #8DB3FA;
+    color: #FFF26E;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
@@ -11,26 +16,32 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #646464;
 }
+
+
 /*-------------------| General |-------------------*/
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    color: #131515;
-    background-color: #f8fbff;
+    color: #12181B;
+    background-color: #F8F8F8;
 }
 
 a {
     text-decoration: none;
-    color: #131515;
+    color: #12181B;
 }
+
+
 /*-------------------|  Header  |-------------------*/
 header {
-    box-shadow: 5px 0 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
     padding: 5px;
+    box-shadow: 0 1px 10px #bebebe;
+    background: #fff;
+    user-select: none;
 }
 
 #header-solarx {
@@ -57,10 +68,75 @@ header {
 }
 
 #header-nav a:hover {
-    transform: translateY(5px);
+    color: #F0DC3D;
+    transform: translateY(2px);
 }
+
 
 /*-------------------|  Footer  |-------------------*/
 footer {
 
+}
+
+
+/*-------------------|  Animations  |-------------------*/
+.scroll-container {
+    height: 400px;
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.scroll-container:nth-of-type(even) {
+    background-color: #d7d7d7;
+}
+
+.scroll-element,
+.scroll-caption {
+    width: 50%;
+}
+
+.scroll-element {
+    min-height: 300px;
+    height: 100%;
+    background-color: #eaeaea;
+}
+
+.scroll-caption {
+    margin: 10px;
+}
+
+.js-scroll {
+    opacity: 0;
+}
+
+.scrolled.fade-in {
+    animation: fade-in 1s ease-in-out forwards;
+}
+
+.scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out forwards;
+}
+
+@keyframes fade-in-bottom {
+    0% {
+        -webkit-transform: translateY(50px);
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
