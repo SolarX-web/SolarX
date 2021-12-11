@@ -1,4 +1,4 @@
-/*-------------------|Pseudo|-------------------*/
+/*-------------------| Pseudo |-------------------*/
 ::selection {
     background: #8DB3FA;
     color: #F8F8F8;
@@ -32,7 +32,7 @@ a {
 }
 
 
-/*-------------------|  Header  |-------------------*/
+/*-------------------| Header |-------------------*/
 header {
     display: flex;
     justify-content: space-between;
@@ -50,25 +50,6 @@ header {
 
 #header-solarx:hover {
     opacity: 0.7;
-}
-
-#header-title {
-    margin: 0;
-    font-size: 32px;
-    animation: tracking-in-expand 1.25s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-}
-
-@keyframes tracking-in-expand {
-    0% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-    40% {
-        opacity: 0.6;
-    }
-    100% {
-        opacity: 1;
-    }
 }
 
 #header-nav {
@@ -120,13 +101,15 @@ footer {
     font-size: 12px;
     color: #666666;
 }
+
+
 /*-------------------| Main Div |-------------------*/
 #main {
     margin: 10px 25px;
 }
 
 
-/*-------------------|  Animations  |-------------------*/
+/*-------------------| Animations |-------------------*/
 .scroll-container {
     height: 400px;
     width: 800px;
@@ -156,42 +139,5 @@ footer {
 
 .js-scroll {
     opacity: 0;
-}
-
-.scrolled {
-    animation-duration: 0.8s;
     animation-fill-mode: forwards;
-}
-
-.unScrolled {
-    animation-duration: 0.4s;
-    animation-direction: reverse;
-}
-
-.unScrolled.fade-in, .scrolled.fade-in {
-    animation-name: fade-in-bottom;
-}
-
-.unScrolled.fade-in-bottom, .scrolled.fade-in-bottom {
-    animation-name: fade-in-bottom;
-}
-
-@keyframes fade-in-bottom {
-    0% {
-        transform: translateY(50px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
 }
