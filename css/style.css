@@ -4,12 +4,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #454E56;
+    background: #9b9b9b;
     border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #646464;
+    background: #a4a4a4;
 }
 
 
@@ -50,11 +50,24 @@ header {
 #header-title {
     margin: 0;
     font-size: 32px;
+    animation: tracking-in-expand 1.25s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-expand {
+    0% {
+        letter-spacing: -0.5em;
+        opacity: 0;
+    }
+    40% {
+        opacity: 0.6;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 #header-nav {
     width: 175px;
-
 }
 
 #header-nav a {
@@ -66,8 +79,10 @@ header {
 
 #header-nav a:hover {
     color: #F0DC3D;
-    transform: translateY(2px);
+    transform: translateY(1px);
+    text-shadow: 1px 2px 2px black;
 }
+
 
 /*-------------------|  Footer  |-------------------*/
 footer {
@@ -138,22 +153,30 @@ footer {
     opacity: 0;
 }
 
-.scrolled.fade-in {
-    animation: fade-in 1s ease-in-out forwards;
+.scrolled {
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
 }
 
-.scrolled.fade-in-bottom {
-    animation: fade-in-bottom 1s ease-in-out forwards;
+.unScrolled {
+    animation-duration: 0.4s;
+    animation-direction: reverse;
+}
+
+.unScrolled.fade-in, .scrolled.fade-in {
+    animation-name: fade-in-bottom;
+}
+
+.unScrolled.fade-in-bottom, .scrolled.fade-in-bottom {
+    animation-name: fade-in-bottom;
 }
 
 @keyframes fade-in-bottom {
     0% {
-        -webkit-transform: translateY(50px);
         transform: translateY(50px);
         opacity: 0;
     }
     100% {
-        -webkit-transform: translateY(0);
         transform: translateY(0);
         opacity: 1;
     }
