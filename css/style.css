@@ -1,4 +1,9 @@
-/*-------------------|Scrollbar|-------------------*/
+/*-------------------|Pseudo|-------------------*/
+::selection {
+    background: #8DB3FA;
+    color: #F8F8F8;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
 }
