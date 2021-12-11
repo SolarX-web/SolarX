@@ -24,6 +24,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     color: #12181B;
     background-color: #F8F8F8;
+    overflow-x: hidden;
 }
 
 a {
@@ -41,7 +42,7 @@ header {
     /* fixed position */
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 10;
     top: 0;
     left: 0;
     /* flexbox */
@@ -54,6 +55,7 @@ header {
     background: #fafafa;
     user-select: none;
     padding: 10px 25px 5px 25px;
+    opacity: 0.95;
 }
 
 #header-solarx {
@@ -133,24 +135,46 @@ footer {
 
 /*-------------------| index.html |-------------------*/
 #welcome-div {
-    background: url("../images/solarzelle1.jpg") center;
-    background-size: cover;
     min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+#welcome-div h1 {
+    font-size: 187px;
+    margin-top: 25px;
+}
+
+#welcome-div h2 {
+    font-size: 69px;
+}
+
+#welcome-div h3 {
+    font-size: 42px;
+}
+
+#welcome-background-div {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url("../images/solarzelle1.jpg") center;
+    background-size: cover;
+    filter: blur(3px) saturate(60%);
+}
+
 #welcome-div img {
     border-radius: 50%;
     background: #F8F8F8;
     margin: 5px;
-    position: relative;
-    top: 60vh;
+    position: absolute;
+    top: 75vh;
     transition: background 0.3s;
     animation: welcome-arrow-move 1s infinite alternate ease-in;
     box-shadow: 0 0 20px 6px #b0b0b0;
     opacity: 0.85;
+    width: 75px;
 }
 
 #welcome-div img:hover {
@@ -163,7 +187,7 @@ footer {
     margin: 0;
     padding: 80px;
     text-align: center;
-    font-family: 'Arial';
+    font-family: 'Arial', serif;
 }
 
 #error #main h1 {

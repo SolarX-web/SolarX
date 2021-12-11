@@ -4,7 +4,7 @@ let scrollElements
 /*-------------------|Smooth scroll|-------------------*/
 function scroll_to_main() {
     $('html, body').animate({
-        scrollTop: $("#main").offset().top - 72.25
+        scrollTop: $("#main").offset().top - 96 + 1.87 + 0.69 // coded by roro
         }, 500)
 }
 
