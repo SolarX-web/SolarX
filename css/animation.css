@@ -366,7 +366,7 @@
 
 @keyframes slide-right {
     0% {
-        transform: translateZ(-1400px) translateX(1000px);
+        transform: translateZ(-100px) translateX(1000px);
         opacity: 0;
     }
     100% {
@@ -399,12 +399,13 @@
 .scrolled.slide-blurred-right, .unScrolled.slide-blurred-right {
     animation-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
     animation-name: slide-blurred-right;
+    overflow: hidden;
 }
 
 @keyframes slide-blurred-right {
     0% {
-        transform: translateX(1000px) scaleX(2.5) scaleY(0.2);
-        transform-origin: 0% 50%;
+        transform: translateX(-100px) scaleX(2.5) scaleY(0.2);
+        transform-origin: 0 50%;
         filter: blur(40px);
         opacity: 0;
     }
