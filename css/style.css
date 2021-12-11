@@ -18,7 +18,7 @@
 }
 
 
-/*-------------------| General |-------------------*/
+/*-------------------| General  |-------------------*/
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -27,18 +27,30 @@ body {
 }
 
 a {
-    text-decoration: none;
-    color: #12181B;
+    text-decoration: underline;
+    color: #456BB4;
+}
+
+a:hover {
+    color: #8DB3FA;
 }
 
 
 /*-------------------| Header |-------------------*/
 header {
+    /* fixed position */
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    /* flexbox */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    box-shadow: 0 1px 10px #bebebe;
+    /* design */
+    box-shadow: 0 1px 10px #b0b0b0;
     background: #fff;
     user-select: none;
     padding: 10px 25px 5px 25px;
@@ -54,19 +66,26 @@ header {
 
 #header-nav {
     width: 175px;
+    margin-right: 20px;
 }
 
 #header-nav a {
     transition: all 0.3s;
     padding: 5px;
+    text-decoration: none;
     display: inline-block;
     font-size: 18px;
+    color: #12181B;
 }
 
 #header-nav a:hover {
     color: #F0DC3D;
     transform: translateY(1px);
-    text-shadow: 1px 2px 2px black;
+    text-shadow: 0 2px 2px black;
+}
+
+#placeholder {
+    height: 72.25px;
 }
 
 
@@ -109,7 +128,32 @@ footer {
 }
 
 
-/*-------------------| Animations |-------------------*/
+/*-------------------|index.html|-------------------*/
+#welcome-div {
+    background: url("../images/solarzelle1.jpg") center center;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#welcome-div img {
+    border-radius: 50%;
+    background: #F8F8F8;
+    margin: 5px;
+    position: relative;
+    top: 50vh;
+    transition: background 0.3s;
+    animation: welcome-arrow-move 1s infinite alternate;
+    box-shadow: 0 0 3px #b0b0b0;
+}
+
+#welcome-div img:hover {
+    background: #D7D7D7;
+}
+
+/*-------------------|Animations|-------------------*/
 .scroll-container {
     height: 400px;
     width: 800px;

@@ -1,6 +1,12 @@
 /*-------------------|Variables|-------------------*/
 let scrollElements
 
+/*-------------------|Smooth scroll|-------------------*/
+function scroll_to_main() {
+    $('html, body').animate({
+        scrollTop: $("#main").offset().top - 72.25
+        }, 800)
+}
 
 /*-------------------|Handle scroll|-------------------*/
 function elementInView(el, offset = 0) {
