@@ -104,6 +104,8 @@ footer {
     padding: 7px;
     transition: opacity 0.3s;
     display: flex;
+    color: #12181B;
+    text-decoration: none;
 }
 
 #footer-nav a:hover {
