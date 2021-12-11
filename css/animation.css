@@ -358,7 +358,7 @@
     }
 }
 
-/*---------|Slide left|---------*/
+/*---------|Slide right|---------*/
 .scrolled.slide-right, .unScrolled.slide-right {
     animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
     animation-name: slide-right;
@@ -544,12 +544,12 @@
 }
 
 /*---------|Tilt bl|---------*/
-.scrolled.tilt-fwd-bl, .unScrolled.tilt-fwd-bl {
+.scrolled.tilt-bl, .unScrolled.tilt-bl {
     animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    animation-name: tilt-fwd-bl;
+    animation-name: tilt-bl;
 }
 
-@keyframes tilt-fwd-bl {
+@keyframes tilt-bl {
     0% {
         transform: rotateY(-20deg) rotateX(-35deg) translate(-300px, 300px) skew(-35deg, 10deg);
         opacity: 0;
@@ -561,12 +561,12 @@
 }
 
 /*---------|Tilt br|---------*/
-.scrolled.tilt-fwd-br, .unScrolled.tilt-fwd-br {
+.scrolled.tilt-br, .unScrolled.tilt-br {
     animation-timing-function: cubic-bezier(0.250, 0.460, 0.450, 0.940);
-    animation-name: tilt-fwd-br;
+    animation-name: tilt-br;
 }
 
-@keyframes tilt-fwd-br {
+@keyframes tilt-br {
     0% {
         transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px) skew(35deg, -10deg);
         opacity: 0;
@@ -665,7 +665,7 @@
 }
 
 
-/*---------| Welcome page |---------*/
+/*-------------------| Welcome page |-------------------*/
 @keyframes welcome-arrow-move {
     0% {
         transform: translateY(0);
