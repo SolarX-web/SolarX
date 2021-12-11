@@ -5,7 +5,7 @@ let scrollElements
 function scroll_to_main() {
     $('html, body').animate({
         scrollTop: $("#main").offset().top - 72.25
-        }, 800)
+        }, 500)
 }
 
 /*-------------------|Handle scroll|-------------------*/

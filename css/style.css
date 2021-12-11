@@ -28,11 +28,11 @@ body {
 
 a {
     text-decoration: underline;
-    color: #456BB4;
+    color: #6b9af5;
 }
 
 a:hover {
-    color: #8DB3FA;
+    color: #4b7ad3;
 }
 
 
@@ -51,7 +51,7 @@ header {
     flex-wrap: wrap;
     /* design */
     box-shadow: 0 1px 10px #b0b0b0;
-    background: #fff;
+    background: #fafafa;
     user-select: none;
     padding: 10px 25px 5px 25px;
 }
@@ -89,9 +89,9 @@ header {
 }
 
 
-/*-------------------|  Footer  |-------------------*/
+/*-------------------| Footer |-------------------*/
 footer {
-    margin: 10px 25px;
+    margin: 10px 1vw;
     padding: 10px 0;
     border-top: 1px solid #575960;
 }
@@ -119,6 +119,8 @@ footer {
 
 #copyright {
     text-align: center;
+    margin-top: -20px;
+    margin-bottom: -10px;
     font-size: 12px;
     color: #666666;
 }
@@ -130,9 +132,9 @@ footer {
 }
 
 
-/*-------------------|index.html|-------------------*/
+/*-------------------| index.html |-------------------*/
 #welcome-div {
-    background: url("../images/solarzelle1.jpg") center center;
+    background: url("../images/solarzelle1.jpg") center;
     background-size: cover;
     min-height: 100vh;
     display: flex;
@@ -145,17 +147,53 @@ footer {
     background: #F8F8F8;
     margin: 5px;
     position: relative;
-    top: 50vh;
+    top: 60vh;
     transition: background 0.3s;
-    animation: welcome-arrow-move 1s infinite alternate;
-    box-shadow: 0 0 3px #b0b0b0;
+    animation: welcome-arrow-move 1s infinite alternate ease-in;
+    box-shadow: 0 0 20px 6px #b0b0b0;
+    opacity: 0.85;
 }
 
 #welcome-div img:hover {
-    background: #D7D7D7;
+    opacity: 1;
 }
 
-/*-------------------|Animations|-------------------*/
+/*-------------------| Error pages |-------------------*/
+#error #main {
+    color: #3e3e3e;
+    text-align: left;
+    margin: 0;
+    padding: 80px;
+    text-align: center;
+    font-family: 'Arial';
+}
+
+#error #main h1 {
+    font-size: 25vw;
+    margin: -45px 0 30px;
+}
+
+#error #main h2 {
+    font-size: 2vw;
+    padding: 0;
+    font-weight: normal;
+}
+
+#error #main a {
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+#error footer {
+    position: fixed;
+    z-index: 1;
+    top: 100%;
+    left: 0;
+    width: 97vw;
+    transform: translateY(-140%);
+}
+
+/*-------------------| Animations |-------------------*/
 .scroll-container {
     height: 400px;
     width: 800px;
