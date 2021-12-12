@@ -141,17 +141,19 @@ footer {
     flex-direction: column;
 }
 
-#welcome-div h1 {
-    font-size: 187px;
-    margin-top: 25px;
+#welcome-div #title {
+    width: 550px;
+    position: absolute;
+    top: 42%;
+    color: rgba(43, 43, 43, 0.99);
+    filter: drop-shadow(4px 4px 5px rgba(0, 0, 0, 0.85));
 }
 
-#welcome-div h2 {
-    font-size: 69px;
-}
-
-#welcome-div h3 {
-    font-size: 42px;
+#welcome-div #message {
+    width: 1000px;
+    position: absolute;
+    top: 22%;
+    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 2));
 }
 
 #welcome-background-div {
@@ -169,12 +171,12 @@ footer {
     background: #F8F8F8;
     margin: 5px;
     position: absolute;
-    top: 75vh;
-    transition: background 0.3s;
+    top: 88vh;
+    transition: all 0.3s;
     animation: welcome-arrow-move 1s infinite alternate ease-in;
     box-shadow: 0 0 20px 6px #b0b0b0;
     opacity: 0.85;
-    width: 75px;
+    width: 60px;
 }
 
 #welcome-div img:hover {

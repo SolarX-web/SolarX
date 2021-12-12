@@ -1,0 +1,551 @@
+@keyframes animate-svg-stroke-1 {
+    0% {
+        stroke-dashoffset: 1154px;
+        stroke-dasharray: 1154px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1154px;
+    }
+}
+
+@keyframes animate-svg-fill-1 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-1 {
+    animation: animate-svg-stroke-1 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0s both,
+    animate-svg-fill-1 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s both;
+}
+
+@keyframes animate-svg-stroke-2 {
+    0% {
+        stroke-dashoffset: 1033.2855224609375px;
+        stroke-dasharray: 1033.2855224609375px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1033.2855224609375px;
+    }
+}
+
+@keyframes animate-svg-fill-2 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-2 {
+    animation: animate-svg-stroke-2 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.12s both,
+    animate-svg-fill-2 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.71s both;
+}
+
+@keyframes animate-svg-stroke-3 {
+    0% {
+        stroke-dashoffset: 499.4319152832031px;
+        stroke-dasharray: 499.4319152832031px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 499.4319152832031px;
+    }
+}
+
+@keyframes animate-svg-fill-3 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-3 {
+    animation: animate-svg-stroke-3 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.24s both,
+    animate-svg-fill-3 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.82s both;
+}
+
+@keyframes animate-svg-stroke-4 {
+    0% {
+        stroke-dashoffset: 838.3165283203125px;
+        stroke-dasharray: 838.3165283203125px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 838.3165283203125px;
+    }
+}
+
+@keyframes animate-svg-fill-4 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-4 {
+    animation: animate-svg-stroke-4 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.36s both,
+    animate-svg-fill-4 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.9299999999999999s both;
+}
+
+@keyframes animate-svg-stroke-5 {
+    0% {
+        stroke-dashoffset: 489.7999572753906px;
+        stroke-dasharray: 489.7999572753906px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 489.7999572753906px;
+    }
+}
+
+@keyframes animate-svg-fill-5 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-5 {
+    animation: animate-svg-stroke-5 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.48s both,
+    animate-svg-fill-5 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.04s both;
+}
+
+@keyframes animate-svg-stroke-6 {
+    0% {
+        stroke-dashoffset: 457.0893249511719px;
+        stroke-dasharray: 457.0893249511719px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 457.0893249511719px;
+    }
+}
+
+@keyframes animate-svg-fill-6 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-6 {
+    animation: animate-svg-stroke-6 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.6s both,
+    animate-svg-fill-6 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.15s both;
+}
+
+@keyframes animate-svg-stroke-7 {
+    0% {
+        stroke-dashoffset: 741.4430541992188px;
+        stroke-dasharray: 741.4430541992188px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 741.4430541992188px;
+    }
+}
+
+@-webkit-keyframes animate-svg-fill-7 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+@keyframes animate-svg-fill-7 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-7 {
+    animation: animate-svg-stroke-7 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.72s both,
+    animate-svg-fill-7 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.26s both;
+}
+
+@keyframes animate-svg-stroke-8 {
+    0% {
+        stroke-dashoffset: 988.5230102539062px;
+        stroke-dasharray: 988.5230102539062px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 988.5230102539062px;
+    }
+}
+
+@keyframes animate-svg-fill-8 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-8 {
+    animation: animate-svg-stroke-8 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.84s both,
+    animate-svg-fill-8 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.37s both;
+}
+
+@keyframes animate-svg-stroke-9 {
+    0% {
+        stroke-dashoffset: 1700.39453125px;
+        stroke-dasharray: 1700.39453125px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1700.39453125px;
+    }
+}
+
+@keyframes animate-svg-fill-9 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-9 {
+    animation: animate-svg-stroke-9 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 0.96s both,
+    animate-svg-fill-9 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.48s both;
+}
+
+@keyframes animate-svg-stroke-10 {
+    0% {
+        stroke-dashoffset: 457.089111328125px;
+        stroke-dasharray: 457.089111328125px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 457.089111328125px;
+    }
+}
+
+@keyframes animate-svg-fill-10 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-10 {
+    animation: animate-svg-stroke-10 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.08s both,
+    animate-svg-fill-10 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.5899999999999999s both;
+}
+
+@keyframes animate-svg-stroke-11 {
+    0% {
+        stroke-dashoffset: 489.7998352050781px;
+        stroke-dasharray: 489.7998352050781px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 489.7998352050781px;
+    }
+}
+
+@keyframes animate-svg-fill-11 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-11 {
+    animation: animate-svg-stroke-11 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.2s both,
+    animate-svg-fill-11 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7000000000000002s both;
+}
+
+@keyframes animate-svg-stroke-12 {
+    0% {
+        stroke-dashoffset: 1007.6492309570312px;
+        stroke-dasharray: 1007.6492309570312px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1007.6492309570312px;
+    }
+}
+
+@keyframes animate-svg-fill-12 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-12 {
+    animation: animate-svg-stroke-12 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.3199999999999998s both,
+    animate-svg-fill-12 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.81s both;
+}
+
+@keyframes animate-svg-stroke-13 {
+    0% {
+        stroke-dashoffset: 891.765380859375px;
+        stroke-dasharray: 891.765380859375px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 891.765380859375px;
+    }
+}
+
+@keyframes animate-svg-fill-13 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-13 {
+    animation: animate-svg-stroke-13 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.44s both,
+    animate-svg-fill-13 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s both;
+}
+
+@keyframes animate-svg-stroke-14 {
+    0% {
+        stroke-dashoffset: 1357.34375px;
+        stroke-dasharray: 1357.34375px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1357.34375px;
+    }
+}
+
+@keyframes animate-svg-fill-14 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-14 {
+    animation: animate-svg-stroke-14 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.56s both,
+    animate-svg-fill-14 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.03s both;
+}
+
+@keyframes animate-svg-stroke-15 {
+    0% {
+        stroke-dashoffset: 1357.3443603515625px;
+        stroke-dasharray: 1357.3443603515625px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1357.3443603515625px;
+    }
+}
+
+@keyframes animate-svg-fill-15 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-15 {
+    animation: animate-svg-stroke-15 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.68s both,
+    animate-svg-fill-15 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.14s both;
+}
+
+@keyframes animate-svg-stroke-16 {
+    0% {
+        stroke-dashoffset: 1033.2847900390625px;
+        stroke-dasharray: 1033.2847900390625px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1033.2847900390625px;
+    }
+}
+
+@keyframes animate-svg-fill-16 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-16 {
+    -webkit-animation: animate-svg-stroke-16 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s both,
+    animate-svg-fill-16 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.25s both;
+    animation: animate-svg-stroke-16 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.7999999999999998s both,
+    animate-svg-fill-16 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.25s both;
+}
+
+@keyframes animate-svg-stroke-17 {
+    0% {
+        stroke-dashoffset: 861.2127075195312px;
+        stroke-dasharray: 861.2127075195312px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 861.2127075195312px;
+    }
+}
+
+@keyframes animate-svg-fill-17 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-17 {
+    animation: animate-svg-stroke-17 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 1.92s both,
+    animate-svg-fill-17 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.36s both;
+}
+
+@keyframes animate-svg-stroke-18 {
+    0% {
+        stroke-dashoffset: 1168.974853515625px;
+        stroke-dasharray: 1168.974853515625px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1168.974853515625px;
+    }
+}
+
+@keyframes animate-svg-fill-18 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-18 {
+    animation: animate-svg-stroke-18 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.04s both,
+    animate-svg-fill-18 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.47s both;
+}
+
+@keyframes animate-svg-stroke-19 {
+    0% {
+        stroke-dashoffset: 1033.286865234375px;
+        stroke-dasharray: 1033.286865234375px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 1033.286865234375px;
+    }
+}
+
+@keyframes animate-svg-fill-19 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-19 {
+    animation: animate-svg-stroke-19 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.16s both,
+    animate-svg-fill-19 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.58s both;
+}
+
+@keyframes animate-svg-stroke-20 {
+    0% {
+        stroke-dashoffset: 457.0890197753906px;
+        stroke-dasharray: 457.0890197753906px;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+        stroke-dasharray: 457.0890197753906px;
+    }
+}
+
+@keyframes animate-svg-fill-20 {
+    0% {
+        fill: transparent;
+    }
+
+    100% {
+        fill: #2B2B2B;
+    }
+}
+
+.welcome-message-20 {
+    animation: animate-svg-stroke-20 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.28s both,
+    animate-svg-fill-20 0.6s cubic-bezier(0.47, 0, 0.745, 0.715) 2.69s both;
+}
