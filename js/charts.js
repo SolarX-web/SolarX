@@ -20,7 +20,6 @@ const uiValues2 = [
     {x: 1.4, y: 4.5},
     {x: 1.5, v: 4.4},
     {x: 1.6, y: 4.35},
-    {x: 1.7, y: null},
     {x: 1.8, y: 4.25},
     {x: 1.9, y: 3.9},
     {x: 1.96, y: 3.8},
@@ -36,11 +35,18 @@ var chartUI = new Chart("ui-diagram", {
         datasets: [
             {
                 label: "Solarzelle 1",
-                pointRadius: 4,
+                pointRadius: function (context) {
+                    const index = context.dataIndex;
+                    return index == 9 ? 6 : 5;
+                },
+                pointStyle: 'rectRot',
                 showLine: true,
-                pointBackgroundColor: "rgb(0,0,255)",
-                borderColor: "rgb(0,0,255)",
-                backgroundColor: "rgba(0,0,255,0.5)",
+                pointBackgroundColor: function (context) {
+                    const index = context.dataIndex;
+                    return index == 9 ? '#F0DC3D' : '#8DB3FA';
+                },
+                borderColor: "#456BB4",
+                backgroundColor: "#8DB3FA",
                 data: uiValues1,
             }
         ]
@@ -70,11 +76,18 @@ var upChart = new Chart("up-diagram", {
         datasets: [
             {
                 label: "Solarzelle 1",
-                pointRadius: 4,
+                pointRadius: function (context) {
+                    const index = context.dataIndex;
+                    return index == 9 ? 6 : 5;
+                },
+                pointStyle: 'rectRot',
                 showLine: true,
-                pointBackgroundColor: "rgb(0,0,255)",
-                borderColor: "rgb(0,0,255)",
-                backgroundColor: "rgba(0,0,255,0.5)",
+                pointBackgroundColor: function (context) {
+                    const index = context.dataIndex;
+                    return index == 9 ? '#F0DC3D' : '#8DB3FA';
+                },
+                borderColor: "#456BB4",
+                backgroundColor: "#8DB3FA",
                 data: upValues1,
             }
         ]
@@ -82,8 +95,8 @@ var upChart = new Chart("up-diagram", {
     options: {}
 });
 
-var angle = [90, 80, 70, 60, 50, 40, 30, 20, 10, 0, -10];
-var voltage1 = [2.09, 2.08, 2.06, 2.05, 2.05, 1.99, 1.97, 1.90, 1.67, 1.48, 1.44];
+var angle = [180, 170, 160, 150, 140, 130, 120, 110, 100, 90, 80, 70, 60, 50, 40, 30, 20, 10, 0];
+var voltage1 = [1.48, 1.67, 1.90, 1.97, 1.99, 2.03, 2.05, 2.06, 2.08 ,2.09, 2.08, 2.06, 2.05, 2.04, 2.00, 1.97, 1.90, 1.67, 1.48];
 
 
 var chartBestAngle = new Chart("angle-diagram", {
@@ -92,8 +105,11 @@ var chartBestAngle = new Chart("angle-diagram", {
         labels: angle,
         datasets: [{
             label: "Spannung bei Lichteinfallswinkel",
-            pointRadius: 4,
-            pointBackgroundColor: "rgba(0,0,255,1)",
+            pointRadius: 5,
+            pointStyle: 'rectRot',
+            showLine: true,
+            borderColor: "#456BB4",
+            backgroundColor: "#8DB3FA",
             data: voltage1
         }]
     },
