@@ -37,18 +37,11 @@ var chartUI = new Chart("ui-diagram", {
             {
                 label: "Solarzelle 1",
                 pointRadius: 4,
+                showLine: true,
                 pointBackgroundColor: "rgb(0,0,255)",
                 borderColor: "rgb(0,0,255)",
                 backgroundColor: "rgba(0,0,255,0.5)",
                 data: uiValues1,
-            },
-            {
-                label: "Solarzelle 2",
-                pointRadius: 4,
-                pointBackgroundColor: "rgb(255,0,0)",
-                borderColor: "rgb(255,0,0)",
-                backgroundColor: "rgba(255,0,0,0.5)",
-                data: uiValues2
             }
         ]
     },
@@ -78,6 +71,7 @@ var upChart = new Chart("up-diagram", {
             {
                 label: "Solarzelle 1",
                 pointRadius: 4,
+                showLine: true,
                 pointBackgroundColor: "rgb(0,0,255)",
                 borderColor: "rgb(0,0,255)",
                 backgroundColor: "rgba(0,0,255,0.5)",
