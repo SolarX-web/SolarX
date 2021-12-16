@@ -132,6 +132,10 @@ footer {
     margin: 10px 25px;
 }
 
+.fold-section {
+
+}
+
 
 /*-------------------| index.html |-------------------*/
 #welcome-div {
@@ -183,6 +187,13 @@ footer {
     opacity: 1;
 }
 
+
+/*-------------------| solarzellen |-------------------*/
+.diagram {
+    width: 100%;
+    max-width:700px;
+}
+
 /*-------------------| Error pages |-------------------*/
 #error #main {
     color: #3e3e3e;
@@ -216,6 +227,7 @@ footer {
     width: 97vw;
     transform: translateY(-140%);
 }
+
 
 /*-------------------| Animations |-------------------*/
 .scroll-container {

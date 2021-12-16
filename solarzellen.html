@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
     <link rel="icon" href="images/logo1080.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animation.css">
@@ -53,8 +54,15 @@
 
 <div id="main">
     <h1>Unsere Solarzellen</h1>
-    <section>
-      <canvas id="ui-chart" width="300" height="300"></canvas>
+    <section class="fold-section">
+        <h3>U-I Diagram</h3>
+        <canvas id="ui-diagram" class="diagram"></canvas>
+        <h3>U-P Diagram</h3>
+        <canvas id="up-diagram" class="diagram"></canvas>
+        <h3>Einfallswinkel</h3>
+        <canvas id="angle-diagram" class="diagram"></canvas>
+
+        <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
     </section>
 </div>
 
