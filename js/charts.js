@@ -35,16 +35,9 @@ var chartUI = new Chart("ui-diagram", {
         datasets: [
             {
                 label: "Solarzelle 1",
-                pointRadius: function (context) {
-                    const index = context.dataIndex;
-                    return index == 9 ? 6 : 5;
-                },
+                pointRadius: 5,
                 pointStyle: 'rectRot',
                 showLine: true,
-                pointBackgroundColor: function (context) {
-                    const index = context.dataIndex;
-                    return index == 9 ? '#F0DC3D' : '#8DB3FA';
-                },
                 borderColor: "#456BB4",
                 backgroundColor: "#8DB3FA",
                 data: uiValues1,
