@@ -35,9 +35,10 @@ var chartUI = new Chart("ui-diagram", {
         datasets: [
             {
                 label: "Solarzelle 1",
-                pointRadius: 5,
+                pointRadius:  5,
                 pointStyle: 'rectRot',
                 showLine: true,
+                pointBackgroundColor: '#8DB3FA',
                 borderColor: "#456BB4",
                 backgroundColor: "#8DB3FA",
                 data: uiValues1,

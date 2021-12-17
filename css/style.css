@@ -129,7 +129,8 @@ footer {
 
 /*-------------------| Main Div |-------------------*/
 #main {
-    margin: 10px 25px;
+    margin: auto;
+    width: 900px;
 }
 
 .fold-section {
@@ -191,9 +192,12 @@ footer {
 /*-------------------| solarzellen |-------------------*/
 .diagram {
     width: 100%;
-    max-width:700px;
 }
 
+.versuch-infos {
+    font-size: 12px;
+    color: #646464;
+}
 /*-------------------| Error pages |-------------------*/
 #error #main {
     color: #3e3e3e;
