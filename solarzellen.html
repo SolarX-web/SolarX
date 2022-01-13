@@ -55,17 +55,19 @@
 <div id="main">
     <h1>Unsere Solarzellen</h1>
     <section class="fold-section">
-        <h3>U-I Diagram</h3>
+        </section>
+    <section id="technical-data">
+        <hr>
+        <h2>Technische Daten</h2>
+        <h3>U-I Kennlinie</h3>
         <canvas id="ui-diagram" class="diagram"></canvas>
-        <h3>U-P Diagram</h3>
+        <h3>U-P Kennlinie</h3>
         <canvas id="up-diagram" class="diagram"></canvas>
         <h3>Einfallswinkel</h3>
         <canvas id="angle-diagram" class="diagram"></canvas>
         <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
-    </section>
-    <section id="technical-data">
-        <hr>
-        <h2>Technische Daten</h2>
+
+
         <table>
             <tr>
                 <td>MPP (Maximum Power Point)</td>
@@ -80,9 +82,12 @@
                 <td>21 mA</td>
             </tr>
         </table>
-        <p class="messurement-info">
-            Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
-        </p>
+        <div class="messurement-info">
+            Infos zum Versuch
+            <div class="messurement-info-details">
+                Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
+            </div>
+        </div>
     </section>
 </div>
 
