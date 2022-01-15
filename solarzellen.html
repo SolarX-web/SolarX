@@ -54,47 +54,82 @@
 
 <div id="main">
     <h1>Unsere Solarzellen</h1>
-    <section class="fold-section">
+    <div id="solarcells-div">
+        <section class="solarcell-section" id="solarcell-1">
+            <section class="overview">
+                <h2>Solarzelle 1</h2>
+            </section>
+            <section class="technical-data">
+<!--            Todo fold section technical data-->
+                <h3>Technische Daten</h3>
+                <h3>U-I Kennlinie</h3>
+                <canvas id="ui-diagram" class="diagram"></canvas>
+                <p>
+                    x: U in V <br>
+                    y: I in mA
+                </p>
+                <h3>U-P Kennlinie</h3>
+                <canvas id="up-diagram" class="diagram"></canvas>
+                <p>
+                    x: U in V <br>
+                    y: P in mW
+                </p>
+                <h3>Einfallswinkel</h3>
+                <p>Unsere Solarzellen bieten nicht nur eine hervorrangended Effizenz, sonder sind dder Konkurrent auch
+                    beim
+                    Einfallswinkel überlegen. </p>
+                <canvas id="angle-diagram" class="diagram"></canvas>
+                <p>
+                    x: Winkel in ° <br>
+                    y: U in % von Umax
+                </p>
+                <p>Der optimale Einfallswinkel beträgt 90°</p>
+                <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
+
+
+                <table>
+                    <tr>
+                        <td>MPP (Maximum Power Point)</td>
+                        <td>bei 1,8V mit 0,0288W</td>
+                    </tr>
+                    <tr>
+                        <td>Leerlaufspannung</td>
+                        <td>2,16V</td>
+                    </tr>
+                    <tr>
+                        <td>Kurzschlussspannung</td>
+                        <td>21 mA</td>
+                    </tr>
+                </table>
+                <div class="messurement-info">
+                    Infos zum Versuch
+                    <div class="messurement-info-details">
+                        Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
+                    </div>
+                </div>
+            </section>
         </section>
-    <section id="technical-data">
-        <hr>
-        <h2>Technische Daten</h2>
-        <h3>U-I Kennlinie</h3>
-        <canvas id="ui-diagram" class="diagram"></canvas>
-        <p>x: U in V</p>
-        <p>y: I in mA</p>
-        <h3>U-P Kennlinie</h3>
-        <canvas id="up-diagram" class="diagram"></canvas>
-        <p>x: U in V</p>
-        <p>y: P in mW</p>
-        <h3>Einfallswinkel</h3>
-        <canvas id="angle-diagram" class="diagram"></canvas>
-        <p>x: Winkel in °</p>
-        <p>y: U in % von Umax</p>
-        <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
+        <section id="solarcell-2" class="solarcell-section fold-section">
+            <section class="overview">
+                <h2>Solarzelle 2</h2>
+            </section>
+            <section class="technical-data">
+                <h3>Technische Daten</h3>
+                <p>Noch nicht verfügbar :(</p>
+            </section>
+        </section>
+        <section id="solarcell-3" class="solarcell-section fold-section">
+            <section class="overview">
+                <h2>Solarzelle 3</h2>
+            </section>
+            <section class="technical-data">
+                <h3>Technische Daten</h3>
+                <p>Noch nicht verfügbar :(</p>
+            </section>
+        </section>
+        </section>
+    </div>
 
-
-        <table>
-            <tr>
-                <td>MPP (Maximum Power Point)</td>
-                <td>bei 1,8V mit 0,0288W</td>
-            </tr>
-            <tr>
-                <td>Leerlaufspannung</td>
-                <td>2,16V</td>
-            </tr>
-            <tr>
-                <td>Kurzschlussspannung</td>
-                <td>21 mA</td>
-            </tr>
-        </table>
-        <div class="messurement-info">
-            Infos zum Versuch
-            <div class="messurement-info-details">
-                Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
-            </div>
-        </div>
-    </section>
 </div>
 
 <footer>
