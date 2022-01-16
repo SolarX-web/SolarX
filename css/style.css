@@ -204,9 +204,28 @@ footer {
 }
 
 .messurement-info-details {
-
     font-size: 12px;
     color: #646464;
+}
+
+.technical-data {
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 2s;
+}
+
+.overview {
+    cursor: pointer;
+}
+
+.overview h2:after {
+    content: '\02795';
+    color: white;
+    float: right;
+}
+
+.overview.open h2:after {
+    content: '\2796';
 }
 
 /*-------------------| Error pages |-------------------*/

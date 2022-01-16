@@ -5,7 +5,7 @@ let scrollElements
 function scroll_to_main() {
     $('html, body').animate({
         scrollTop: $("#main").offset().top - 96 + 1.87 + 0.69 //Coded by RoRo187
-        }, 500)
+    }, 500)
 }
 
 /*-------------------|Handle scroll|-------------------*/
@@ -47,6 +47,17 @@ function handleScrollAnimation() {
     })
 }
 
+/*-------------------|Handle scroll|-------------------*/
+function Scroll(obj) {
+    let content = $(obj).next()[0]
+    if ($(content).height()) {
+        $(obj).removeClass("open")
+        $(content).css('max-height', 0)
+    } else {
+        $(obj).addClass("open")
+        $(content).css('max-height', content.scrollHeight)
+    }
+}
 
 /*-------------------|Events|-------------------*/
 $(document).ready(function () {
