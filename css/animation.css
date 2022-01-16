@@ -19,6 +19,23 @@
     animation-duration: 0.4s;
 }
 
+
+/*---------|Slidetop|---------*/
+.scrolled.slide-top, .unScrolled.slide-top {
+    transform: translateY(100px);
+    animation: slide-top 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes slide-top {
+    0% {
+        transform: translateY(100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
 /*---------|Fade|---------*/
 .scrolled.fade, .unScrolled.fade {
     animation-name: fade;
@@ -89,6 +106,7 @@
     animation-timing-function: cubic-bezier(0.230, 1.000, 0.320, 1.000);
     animation-name: slide-blurred-left;
 }
+
 @keyframes slide-blurred-left {
     0% {
         transform: translateX(-1000px) scaleX(2.5) scaleY(0.2);

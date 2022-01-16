@@ -67,53 +67,65 @@
                     <img src="images/expand.svg" alt="">
                 </div>
                 <div class="technical-data-fold fold-section">
-                    <h3>U-I Kennlinie</h3>
-                    <canvas id="ui-diagram" class="diagram"></canvas>
-                    <p>
-                        x: U in V<br>
-                        y: I in mA
-                    </p>
-                    <h3>U-P Kennlinie</h3>
-                    <canvas id="up-diagram" class="diagram"></canvas>
-                    <p>
-                        x: U in V <br>
-                        y: P in mW
-                    </p>
-                    <h3>Einfallswinkel</h3>
-                    <p>Unsere Solarzellen bieten nicht nur eine hervorrangended Effizenz, sondern sind der Konkurrent
-                        auch
-                        beim
-                        Einfallswinkel überlegen. </p>
-                    <canvas id="angle-diagram" class="diagram"></canvas>
-                    <p>
-                        x: Winkel in ° <br>
-                        y: U in % von Umax
-                    </p>
-                    <p>Der optimale Einfallswinkel beträgt 90°</p>
+                    <div class="js-scroll slide-top">
+                        <h3>U-I Kennlinie</h3>
+                        <canvas id="ui-diagram" class="diagram"></canvas>
+                        <p>
+                            x: U in V<br>
+                            y: I in mA
+                        </p>
+                    </div>
+                    <div class="js-scroll slide-top">
+                        <h3>U-P Kennlinie</h3>
+                        <canvas id="up-diagram" class="diagram"></canvas>
+                        <p>
+                            x: U in V <br>
+                            y: P in mW
+                        </p>
+                    </div>
+
+                    <div class="js-scroll slide-top">
+                        <h3>Einfallswinkel</h3>
+                        <p>Unsere Solarzellen bieten nicht nur eine hervorrangended Effizenz, sondern sind der
+                            Konkurrent
+                            auch
+                            beim
+                            Einfallswinkel überlegen. </p>
+                        <canvas id="angle-diagram" class="diagram"></canvas>
+                        <p>
+                            x: Winkel in ° <br>
+                            y: U in % von Umax
+                        </p>
+                        <p>Der optimale Einfallswinkel beträgt 90°</p>
+                    </div>
                     <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
 
-
-                    <table>
-                        <tr>
-                            <td>MPP (Maximum Power Point)</td>
-                            <td>bei 1,8V mit 0,0288W</td>
-                        </tr>
-                        <tr>
-                            <td>Leerlaufspannung</td>
-                            <td>2,16V</td>
-                        </tr>
-                        <tr>
-                            <td>Kurzschlussspannung</td>
-                            <td>21 mA</td>
-                        </tr>
-                    </table>
-                    <div class="messurement-info">
-                        Infos zum Versuch
-                        <div class="messurement-info-details">
-                            Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
+                    <div class="js-scroll slide-top">
+                        <h3>Weitere Daten</h3>
+                        <table>
+                            <tr>
+                                <td>MPP (Maximum Power Point)</td>
+                                <td>bei 1,8V mit 0,0288W</td>
+                            </tr>
+                            <tr>
+                                <td>Leerlaufspannung</td>
+                                <td>2,16V</td>
+                            </tr>
+                            <tr>
+                                <td>Kurzschlussspannung</td>
+                                <td>21 mA</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="js-scroll slide-top">
+                        <div class="messurement-info">
+                            Infos zum Versuch
+                            <div class="messurement-info-details">
+                                Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
+                            </div>
                         </div>
                     </div>
-                </div>
+
             </section>
         </section>
 

@@ -39,9 +39,9 @@ function hideScrollElement(el) {
 
 function handleScrollAnimation() {
     scrollElements.forEach(element => {
-        if (elementInView(element, 1.28)) {
+        if (elementInView(element, 1.21)) {
             displayScrollElement(element)
-        } else if (elementOutOfView(element, 1.25)) {
+        } else if (elementOutOfView(element, 1.15)) {
             hideScrollElement(element)
         }
     })
