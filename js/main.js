@@ -47,15 +47,15 @@ function handleScrollAnimation() {
     })
 }
 
-/*-------------------|Handle scroll|-------------------*/
-function Scroll(obj) {
-    let content = $(obj).next()[0]
-    if ($(content).height()) {
-        $(obj).removeClass("open")
-        $(content).css('max-height', 0)
+/*-------------------| Fold section|-------------------*/
+function Fold(container, img) {
+    console.log(img)
+    if ($(container).height()) {
+        $(container).css('max-height', 0)
+        img.src = "images/expand.svg"
     } else {
-        $(obj).addClass("open")
-        $(content).css('max-height', content.scrollHeight)
+        $(container).css('max-height', container.scrollHeight)
+        img.src = "images/collapse.svg"
     }
 }
 

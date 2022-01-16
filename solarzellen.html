@@ -55,78 +55,98 @@
 <div id="main">
     <h1>Unsere Solarzellen</h1>
     <div id="solarcells-div">
-        <section class="solarcell-section" id="solarcell-1">
-            <section class="overview" onclick="Scroll(this)">
+
+        <section class="float-section" id="solarcell-1">
+            <section class="overview">
                 <h2>Solarzelle 1</h2>
+                <!--                Todo add images + size and price information-->
             </section>
-            <section class="technical-data">
-                <h3>Technische Daten</h3>
-                <h3>U-I Kennlinie</h3>
-                <canvas id="ui-diagram" class="diagram"></canvas>
-                <p>
-                    x: U in V <br>
-                    y: I in mA
-                </p>
-                <h3>U-P Kennlinie</h3>
-                <canvas id="up-diagram" class="diagram"></canvas>
-                <p>
-                    x: U in V <br>
-                    y: P in mW
-                </p>
-                <h3>Einfallswinkel</h3>
-                <p>Unsere Solarzellen bieten nicht nur eine hervorrangended Effizenz, sonder sind dder Konkurrent auch
-                    beim
-                    Einfallswinkel überlegen. </p>
-                <canvas id="angle-diagram" class="diagram"></canvas>
-                <p>
-                    x: Winkel in ° <br>
-                    y: U in % von Umax
-                </p>
-                <p>Der optimale Einfallswinkel beträgt 90°</p>
-                <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
+            <section>
+                <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
+                    <h3>Technische Daten</h3>
+                    <img src="images/expand.svg" alt="">
+                </div>
+                <div class="technical-data-fold fold-section">
+                    <h3>U-I Kennlinie</h3>
+                    <canvas id="ui-diagram" class="diagram"></canvas>
+                    <p>
+                        x: U in V<br>
+                        y: I in mA
+                    </p>
+                    <h3>U-P Kennlinie</h3>
+                    <canvas id="up-diagram" class="diagram"></canvas>
+                    <p>
+                        x: U in V <br>
+                        y: P in mW
+                    </p>
+                    <h3>Einfallswinkel</h3>
+                    <p>Unsere Solarzellen bieten nicht nur eine hervorrangended Effizenz, sondern sind der Konkurrent
+                        auch
+                        beim
+                        Einfallswinkel überlegen. </p>
+                    <canvas id="angle-diagram" class="diagram"></canvas>
+                    <p>
+                        x: Winkel in ° <br>
+                        y: U in % von Umax
+                    </p>
+                    <p>Der optimale Einfallswinkel beträgt 90°</p>
+                    <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
 
 
-                <table>
-                    <tr>
-                        <td>MPP (Maximum Power Point)</td>
-                        <td>bei 1,8V mit 0,0288W</td>
-                    </tr>
-                    <tr>
-                        <td>Leerlaufspannung</td>
-                        <td>2,16V</td>
-                    </tr>
-                    <tr>
-                        <td>Kurzschlussspannung</td>
-                        <td>21 mA</td>
-                    </tr>
-                </table>
-                <div class="messurement-info">
-                    Infos zum Versuch
-                    <div class="messurement-info-details">
-                        Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
+                    <table>
+                        <tr>
+                            <td>MPP (Maximum Power Point)</td>
+                            <td>bei 1,8V mit 0,0288W</td>
+                        </tr>
+                        <tr>
+                            <td>Leerlaufspannung</td>
+                            <td>2,16V</td>
+                        </tr>
+                        <tr>
+                            <td>Kurzschlussspannung</td>
+                            <td>21 mA</td>
+                        </tr>
+                    </table>
+                    <div class="messurement-info">
+                        Infos zum Versuch
+                        <div class="messurement-info-details">
+                            Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
+                        </div>
                     </div>
                 </div>
             </section>
         </section>
-        <section id="solarcell-2" class="solarcell-section fold-section">
-            <section class="overview" onclick="Scroll(this)">
+
+        <section class="float-section" id="solarcell-2">
+            <section class="overview">
                 <h2>Solarzelle 2</h2>
             </section>
-            <section class="technical-data">
-                <h3>Technische Daten</h3>
-                <p>Noch nicht verfügbar :(</p>
+            <section>
+                <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
+                    <h3>Technische Daten</h3>
+                    <img src="images/expand.svg" alt="">
+                </div>
+                <div class="technical-data-fold fold-section">
+                    <p>Noch nicht verfügbar :(</p>
+                </div>
             </section>
         </section>
-        <section id="solarcell-3" class="solarcell-section fold-section">
-            <section class="overview" onclick="Scroll(this)">
+
+        <section class="float-section" id="solarcell-3">
+            <section class="overview">
                 <h2>Solarzelle 3</h2>
             </section>
-            <section class="technical-data">
-                <h3>Technische Daten</h3>
-                <p>Noch nicht verfügbar :(</p>
+            <section>
+                <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
+                    <h3>Technische Daten</h3>
+                    <img src="images/expand.svg" alt="">
+                </div>
+                <div class="technical-data-fold fold-section">
+                    <p>Noch nicht verfügbar :(</p>
+                </div>
             </section>
         </section>
-        </section>
+
     </div>
 
 </div>
