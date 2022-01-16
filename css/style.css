@@ -151,10 +151,9 @@ footer {
 }
 
 #welcome-div #message {
-    width: 1000px;
     position: absolute;
     top: 22%;
-    filter: drop-shadow(0 0 1px rgba(0, 0, 0, 2));
+    font-size: 64px;
 }
 
 #welcome-background-div {
