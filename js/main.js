@@ -49,7 +49,6 @@ function handleScrollAnimation() {
 
 /*-------------------| Fold section|-------------------*/
 function Fold(container, img) {
-    console.log(img)
     if ($(container).height()) {
         $(container).css('max-height', 0)
         img.src = "images/expand.svg"
@@ -67,4 +66,13 @@ $(document).ready(function () {
     $(window).on("scroll", function () {
         handleScrollAnimation()
     })
+
+    //Coded by COckyChris (aMaZioNg) PS: Please GivE thIS proJecT a Staar ╰(*°▽°*)╯
+    sHushi()
+    function sHushi() {
+        setTimeout(function () {
+            handleScrollAnimation()
+            sHushi()
+        }, 0.2)
+    }
 })
