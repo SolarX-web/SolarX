@@ -12,7 +12,7 @@ function scroll_to_main() {
 function elementInView(el, offset = 0) {
     let elementTop = el.getBoundingClientRect().top
 
-    return (elementTop <= $(window).innerHeight() * offset)
+    return (elementTop <= $(window).innerHeight() * offset - 100)
 }
 
 function elementOutOfView(el, offset) {
@@ -26,7 +26,7 @@ function displayScrollElement(el) {
     setTimeout(function () {
         $(el).addClass("scrolled")
         $(el).css("opacity", "1")
-    }, 0.0002)
+    }, 1)
 }
 
 function hideScrollElement(el) {
@@ -34,12 +34,12 @@ function hideScrollElement(el) {
     setTimeout(function () {
         $(el).addClass("unScrolled")
         $(el).css("opacity", "0")
-    }, 0.00002)
+    }, 1)
 }
 
 function handleScrollAnimation() {
     scrollElements.forEach(element => {
-        if (elementInView(element, 0.90)) {
+        if (elementInView(element, 1.01)) {
             displayScrollElement(element)
         } else if (elementOutOfView(element, 0.90)) {
             hideScrollElement(element)
