@@ -62,7 +62,7 @@ function Fold(container, img) {
 $(document).ready(function () {
     scrollElements = $(".js-scroll").toArray()
     scrollElements.forEach(element => {
-        $(element).wrap('<div class="big-boss(this is a brewad lol im writing hihi)"></div>')
+        $(element).wrap('<div class="big-boss"></div>')
     })
 
     handleScrollAnimation()
