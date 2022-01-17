@@ -198,11 +198,37 @@ footer {
     max-height: 0;
 }
 
+.overview {
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 7px;
+}
+
+.overview-div h2 {
+    border-bottom: 1px solid #575960;
+    width: 100%;
+}
+
+.overview-image {
+    height: 250px;
+}
+
+.price {
+    font-weight: bold;
+    /* Todo Animation */
+}
+
 .technical-data-fold-button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-radius: 15px 15px 0 0 ;
+    border-radius: 15px 15px 0 0;
     border-bottom: 1px solid black;
     margin: 15px 0 0 0;
     padding: 7px;
@@ -213,6 +239,7 @@ footer {
 .technical-data-fold {
     padding: 0 7px;
 }
+
 .technical-data-fold-button:hover {
     box-shadow: 0 1px 10px #b0b0b0;
 }
@@ -225,13 +252,13 @@ footer {
     width: 100%;
 }
 
-.messurement-info {
+.measurement-info {
     border: 1px black solid;
     border-radius: 6px;
     padding: 8px;
 }
 
-.messurement-info-details {
+.measurement-info-details {
     font-size: 12px;
     color: #646464;
 }

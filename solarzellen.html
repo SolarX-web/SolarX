@@ -58,8 +58,19 @@
 
         <section class="float-section js-scroll slide-top" id="solarcell-1">
             <section class="overview">
-                <h2>Solarzelle 1</h2>
-                <!--                Todo add images + size and price information-->
+                <div class="overview-div">
+                    <div>
+                        <h2>Solarzelle basic</h2>
+                        <p>
+                            Unser Basismodell! Perfekt für Dächer aller Art, für private Familien und Firmen.
+                        </p>
+                        <p>Maße: 60cm x 80cm</p>
+                    </div>
+                    <p>Erhältlich ab: <span class="price">420,69€</span></p>
+                </div>
+                <img class="overview-image" src="images/Solarcell1.png" alt="">
+                <!-- Todo resize/compress images -->
+                <!-- Todo remove white background from images, maybe put images into a frame -->
             </section>
             <section>
                 <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
@@ -85,20 +96,17 @@
                     </div>
                     <div class="js-scroll slide-top">
                         <h3>Einfallswinkel</h3>
-                        <p>Unsere Solarzellen bieten nicht nur eine hervorrangended Effizenz, sondern sind der
-                            Konkurrent
-                            auch
-                            beim
-                            Einfallswinkel überlegen. </p>
+                        <p>Unsere Solarzellen bieten nicht nur eine hervorragende Effizienz, sondern sind der
+                            Konkurrenz auch beim Einfallswinkel überlegen. </p>
                         <canvas id="angle-diagram" class="diagram"></canvas>
                         <p>
                             x: Winkel in ° <br>
                             y: U in % von Umax
+                            <!-- Todo Umax lower + smaller -->
                         </p>
                         <p>Der optimale Einfallswinkel beträgt 90°</p>
                     </div>
                     <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
-
                     <div class="js-scroll slide-top">
                         <h3>Weitere Daten</h3>
                         <table>
@@ -117,20 +125,32 @@
                         </table>
                     </div>
                     <div class="js-scroll slide-top">
-                        <div class="messurement-info">
+                        <div class="measurement-info">
                             Infos zum Versuch
-                            <div class="messurement-info-details">
-                                Versuch durchgeführt mit 12V/20W Halogenlampe mit 30cm Abstand zu unserer Solarzelle.
+                            <div class="measurement-info-details">
+                                <!-- Todo Schaltplan hinzufügen -->
+                                Versuch durchgeführt mit 12V/20W Halogenlampe mit 30 cm Abstand zu unserer Solarzelle.
                             </div>
                         </div>
                     </div>
-
+                </div>
             </section>
         </section>
 
         <section class="float-section js-scroll slide-top" id="solarcell-2">
             <section class="overview">
-                <h2>Solarzelle 2</h2>
+                <div class="overview-div">
+                    <div>
+                        <h2>Solarzelle max</h2>
+                        <p>
+                            Unser Basismodell in EXTRAGROß! Ideal für größere Dächer und Flächen. Meist von
+                            professionellen Kunden genutzt.
+                        </p>
+                        <p>Maße: 90cm x 150cm</p>
+                    </div>
+                    <p>Bald erhältlich ab: <span class="price">1879,99€</span></p>
+                </div>
+                <img class="overview-image" src="images/Solarcell2.png" alt="">
             </section>
             <section>
                 <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
@@ -138,14 +158,30 @@
                     <img src="images/expand.svg" alt="">
                 </div>
                 <div class="technical-data-fold fold-section">
-                    <p>Noch nicht verfügbar :(</p>
+                    <h3>Noch nicht verfügbar :(</h3>
+                    <p>
+                        Dieses Produkt befindet sich in der finalen Phase der Entwicklung. <br>
+                        Genaue Daten folgen...
+                    </p>
                 </div>
             </section>
         </section>
 
         <section class="float-section js-scroll slide-top" id="solarcell-3">
             <section class="overview">
-                <h2>Solarzelle 3</h2>
+                <div class="overview-div">
+                    <div>
+                        <h2>Solarzelle hexagon</h2>
+                        <p>
+                            Unser neustes Modell ist eine absolute Design-Neuheit. Die Form eines Hexagons
+                            bietet zahlreiche Anordnungsmöglichkeiten. So werden selbst die komplexesten Flächen
+                            möglichst effizient abgedeckt.
+                        </p>
+                        <p>Maße: 50cm x 50cm</p>
+                    </div>
+                    <p>Bald erhältlich ab: <span class="price">690,13€</span></p>
+                </div>
+                <img class="overview-image" src="images/Solarcell3.png" alt="">
             </section>
             <section>
                 <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
@@ -153,7 +189,11 @@
                     <img src="images/expand.svg" alt="">
                 </div>
                 <div class="technical-data-fold fold-section">
-                    <p>Noch nicht verfügbar :(</p>
+                    <h3>Noch nicht verfügbar :(</h3>
+                    <p>
+                        Dieses Produkt befindet sich in der finalen Phase der Entwicklung. <br>
+                        Genaue Daten folgen...
+                    </p>
                 </div>
             </section>
         </section>
