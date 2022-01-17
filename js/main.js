@@ -12,7 +12,7 @@ function scroll_to_main() {
 function elementInView(el, offset = 0) {
     let elementTop = el.getBoundingClientRect().top
 
-    return (elementTop <= $(window).innerHeight() * offset - 100)
+    return (elementTop <= $(window).innerHeight() * offset)
 }
 
 function elementOutOfView(el, offset) {
@@ -39,9 +39,9 @@ function hideScrollElement(el) {
 
 function handleScrollAnimation() {
     scrollElements.forEach(element => {
-        if (elementInView(element, 1.01)) {
+        if (elementInView($(element).parent()[0], 0.8)) {
             displayScrollElement(element)
-        } else if (elementOutOfView(element, 0.90)) {
+        } else if (elementOutOfView($(element).parent()[0], 0.82)) {
             hideScrollElement(element)
         }
     })
@@ -61,6 +61,10 @@ function Fold(container, img) {
 /*-------------------|Events|-------------------*/
 $(document).ready(function () {
     scrollElements = $(".js-scroll").toArray()
+    scrollElements.forEach(element => {
+        $(element).wrap('<div class="big-boss(this is a brewad lol im writing hihi)"></div>')
+    })
+
     handleScrollAnimation()
 
     $(window).on("scroll", function () {
