@@ -192,6 +192,10 @@ footer {
     box-shadow: 0 1px 10px #b0b0b0;
 }
 
+.float-image {
+/*    Todo float image*/
+}
+
 .fold-section {
     overflow: hidden;
     transition: all 0.5s;
@@ -213,6 +217,7 @@ footer {
 .overview-div h2 {
     border-bottom: 1px solid #575960;
     width: 100%;
+    margin-top: 0;
 }
 
 .overview-image {
@@ -263,6 +268,21 @@ footer {
     color: #646464;
 }
 
+
+/*-------------------| about.html  |-------------------*/
+#about-solarx > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#about-solarx {
+    display: flex;
+    justify-content: space-between;
+}
+
+#team-roles {
+    display: flex;
+}
 
 /*-------------------| Error pages |-------------------*/
 #error #main {
