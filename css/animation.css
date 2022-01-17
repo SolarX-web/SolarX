@@ -22,16 +22,18 @@
 
 /*---------|Slidetop|---------*/
 .scrolled.slide-top, .unScrolled.slide-top {
-    transform: translateY(100px);
-    animation: slide-top 0.7s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    animation-name: slide-top;
 }
 
 @keyframes slide-top {
     0% {
         transform: translateY(100px);
+        opacity: 0;
     }
     100% {
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
