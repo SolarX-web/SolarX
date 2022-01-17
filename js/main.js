@@ -39,9 +39,13 @@ function hideScrollElement(el) {
 
 function handleScrollAnimation() {
     scrollElements.forEach(element => {
-        if (elementInView($(element).parent()[0], 0.8)) {
+        let checkElement = element
+        if ($(element).attr("class") == "bug") {
+            checkElement = $(element).parent()[0]
+        }
+        if (elementInView(checkElement, 0.8)) {
             displayScrollElement(element)
-        } else if (elementOutOfView($(element).parent()[0], 0.82)) {
+        } else if (elementOutOfView(checkElement, 0.82)) {
             hideScrollElement(element)
         }
     })
@@ -62,7 +66,9 @@ function Fold(container, img) {
 $(document).ready(function () {
     scrollElements = $(".js-scroll").toArray()
     scrollElements.forEach(element => {
-        $(element).wrap('<div class="big-boss"></div>')
+        if ($(element).attr("class") == "bug") {
+            $(element).wrap('<div class="big-boss"></div>')
+        }
     })
 
     handleScrollAnimation()
