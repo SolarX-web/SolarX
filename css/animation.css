@@ -22,6 +22,7 @@
 
 /*---------|Slidetop|---------*/
 .scrolled.slide-top, .unScrolled.slide-top {
+    transform: translateY(100px);
     animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
     animation-name: slide-top;
 }

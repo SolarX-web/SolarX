@@ -12,13 +12,13 @@ function scroll_to_main() {
 function elementInView(el, offset = 0) {
     let elementTop = el.getBoundingClientRect().top
 
-    return (elementTop <= $(window).innerHeight() / offset)
+    return (elementTop <= $(window).innerHeight() * offset)
 }
 
 function elementOutOfView(el, offset) {
     let elementTop = el.getBoundingClientRect().top
 
-    return (elementTop > $(window).innerHeight() / offset)
+    return (elementTop > $(window).innerHeight() * offset)
 }
 
 function displayScrollElement(el) {
@@ -39,9 +39,9 @@ function hideScrollElement(el) {
 
 function handleScrollAnimation() {
     scrollElements.forEach(element => {
-        if (elementInView(element, 1.28)) {
+        if (elementInView(element, 0.90)) {
             displayScrollElement(element)
-        } else if (elementOutOfView(element, 1.25)) {
+        } else if (elementOutOfView(element, 0.90)) {
             hideScrollElement(element)
         }
     })
