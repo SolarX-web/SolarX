@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/html">
+
+<head>
+	<meta charset="UTF-8">
+	<title id="tabTitle">Solar Clicker</title>
+	<link rel="icon" type="image/png" href="images/Icon.png">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<audio id="BGMSound" loop><source src="sounds/BGMusic.mp3">Lost</audio>
+	<div id="secret"></div>
+	<div id="container">
+		<div id="header">
+			<h1 id="title">Solar Clicker</h1>
+		</div>
+		<div id="stats">
+			<h2 id="energyScore">Energy: 0</h2>
+			<h3 id="energyPerSecond">EPS: 0</h3>
+			<h4 id="energyPerClick">EPC: 0</h4>
+		</div>
+		<div id="settings">
+			<div class="soundSettings">
+				<div id="soundB">Sounds</div>
+			</div>
+			<div class="soundSettings">
+				<div id="BGMusicB">Background music</div>
+				<input type="range" min="1" max="100" value="100" id="BGMSlider">
+			</div>
+		</div>
+		<h2 id="activateUpgrade" onclick="open_close('upgrade')">Upgrade</h2>
+		<div id="upgrade">
+			<div class="item">
+				<div id="doubleclick" onclick="upgrade('DoubleClick', 100)">
+					<span class="itemName" id="upgradeNameDoubleClick">Click x3</span>
+					<span class="itemPrice" id="upgradePriceDoubleClick">100</span>
+					<span class="itemOwned" id="upgradeOwnedDoubleClick">0</span>
+				</div>
+			</div>
+		</div>
+		<input type="image" src="images/Solarcell.png" id="solarcell">
+		<h2 id="activateShop" onclick="open_close('shop')">Shop</h2>
+		<div id="shop">
+			<div class="item" onclick="shop('1', 25)">
+				<div id="1">
+					<span class="itemName" id="productName1">Baker</span>
+					<span class="itemPrice" id="productPrice1">25</span>
+					<span class="itemOwned" id="productOwned1">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="2" onclick="shop('2', 100)">
+					<span class="itemName" id="productName2">Market</span>
+					<span class="itemPrice" id="productPrice2">100</span>
+					<span class="itemOwned" id="productOwned2">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="3" onclick="shop('3', 1100)">
+					<span class="itemName" id="productName3">Shop</span>
+					<span class="itemPrice" id="productPrice3">1100</span>
+					<span class="itemOwned" id="productOwned3">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="4" onclick="shop('4', 12400)">
+					<span class="itemName" id="productName4">Plantation</span>
+					<span class="itemPrice" id="productPrice4">12400</span>
+					<span class="itemOwned" id="productOwned4">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="5" onclick="shop('5', 130000)">
+					<span class="itemName" id="productName5">Factory</span>
+					<span class="itemPrice" id="productPrice5">130000</span>
+					<span class="itemOwned" id="productOwned5">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="6" onclick="shop('6', 1400000)">
+					<span class="itemName" id="productName6">Company</span>
+					<span class="itemPrice" id="productPrice6">1400000</span>
+					<span class="itemOwned" id="productOwned6">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="7" onclick="shop('7', 15800000)">
+					<span class="itemName" id="productName7">Temple</span>
+					<span class="itemPrice" id="productPrice7">15800000</span>
+					<span class="itemOwned" id="productOwned7">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="8" onclick="shop('8', 132000000)">
+					<span class="itemName" id="productName8">Rocket</span>
+					<span class="itemPrice" id="productPrice8">132000000</span>
+					<span class="itemOwned" id="productOwned8">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="9" onclick="shop('9', 1730000000)">
+					<span class="itemName" id="productName9">Moon</span>
+					<span class="itemPrice" id="productPrice9">1730000000</span>
+					<span class="itemOwned" id="productOwned9">0</span>
+				</div>
+			</div>
+			<div class="item">
+				<div id="10" onclick="shop('10', 14540000000)">
+					<span class="itemName" id="productName10">Mars</span>
+					<span class="itemPrice" id="productPrice10">14540000000</span>
+					<span class="itemOwned" id="productOwned10">0</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+
+</html>
