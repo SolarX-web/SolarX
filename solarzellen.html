@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/logo1080.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title>Solarzellen - SolarX</title>
+</head>
+<body>
+<header>
+    <a id="header-solarx" href="index.html"><img src="images/solarx.png" alt="SolarX" width="150px"></a>
+    <svg id="header-title" width="250" height="50" viewBox="0 0 528.6 74.8"
+         xmlns="http://www.w3.org/2000/svg">
+        <g id="svgGroup" stroke-linecap="round" fill-rule="evenodd" font-size="9pt" stroke="#000" stroke-width="0.25mm"
+           fill="black" style="stroke:#000;stroke-width:0.25mm;fill:black">
+            <path d="M 0 65.7 L 2.9 60 Q 6.589 63.689 12.633 66.011 A 40.029 40.029 0 0 0 13 66.15 Q 19.3 68.5 26 68.5 A 41.333 41.333 0 0 0 30.916 68.227 Q 36.722 67.53 40.1 65.05 Q 44.8 61.6 44.8 56.1 A 11.204 11.204 0 0 0 44.441 53.189 A 8.167 8.167 0 0 0 42.25 49.4 A 16.672 16.672 0 0 0 37.456 46.146 A 19.995 19.995 0 0 0 36 45.55 A 56.043 56.043 0 0 0 33.404 44.682 Q 30.683 43.838 26.949 42.907 A 196.876 196.876 0 0 0 25.7 42.6 A 172.164 172.164 0 0 1 21.075 41.365 Q 16.484 40.065 13.31 38.832 A 50.41 50.41 0 0 1 13.1 38.75 Q 8.4 36.9 5.05 33.1 Q 1.7 29.3 1.7 22.8 Q 1.7 17.5 4.5 13.15 A 16.908 16.908 0 0 1 8.883 8.601 A 23.785 23.785 0 0 1 13.1 6.2 A 27.46 27.46 0 0 1 18.931 4.378 Q 21.71 3.819 24.921 3.662 A 52.769 52.769 0 0 1 27.5 3.6 Q 33.5 3.6 39.25 5.25 A 37.934 37.934 0 0 1 44.922 7.356 A 29.834 29.834 0 0 1 49.2 9.8 L 46.7 15.7 Q 42.3 12.8 37.3 11.35 Q 32.3 9.9 27.5 9.9 Q 21.787 9.9 17.829 11.269 A 14.797 14.797 0 0 0 13.65 13.45 A 12.37 12.37 0 0 0 10.639 16.673 A 10.885 10.885 0 0 0 9 22.6 A 11.221 11.221 0 0 0 9.381 25.602 A 8.36 8.36 0 0 0 11.55 29.35 A 15.828 15.828 0 0 0 15.887 32.396 A 19.631 19.631 0 0 0 17.95 33.25 A 68.847 68.847 0 0 0 20.615 34.118 Q 23.831 35.1 28.3 36.2 Q 36 38.1 40.75 39.95 Q 45.5 41.8 48.8 45.55 A 12.676 12.676 0 0 1 51.534 50.854 Q 52.029 52.776 52.091 55.045 A 24.041 24.041 0 0 1 52.1 55.7 Q 52.1 61 49.25 65.35 A 16.822 16.822 0 0 1 44.795 69.878 A 23.894 23.894 0 0 1 40.5 72.25 Q 34.6 74.8 26 74.8 Q 18.2 74.8 11.05 72.3 Q 5.296 70.288 1.647 67.241 A 19.692 19.692 0 0 1 0 65.7 Z"
+                  id="0" vector-effect="non-scaling-stroke" class="header-title-1"></path>
+            <path d="M 88.2 74.7 Q 80.6 74.7 74.5 71.25 Q 68.4 67.8 64.9 61.7 A 26.566 26.566 0 0 1 61.485 50.267 A 32.329 32.329 0 0 1 61.4 47.9 A 29.01 29.01 0 0 1 62.634 39.32 A 25.58 25.58 0 0 1 64.9 34.1 Q 68.4 28 74.5 24.6 A 27.084 27.084 0 0 1 86.092 21.267 A 32.638 32.638 0 0 1 88.2 21.2 A 29.192 29.192 0 0 1 97.062 22.512 A 26.09 26.09 0 0 1 101.9 24.6 Q 108 28 111.45 34.1 A 26.789 26.789 0 0 1 114.798 45.3 A 32.648 32.648 0 0 1 114.9 47.9 A 29.448 29.448 0 0 1 113.716 56.374 A 25.783 25.783 0 0 1 111.45 61.7 Q 108 67.8 101.9 71.25 A 26.846 26.846 0 0 1 90.077 74.646 A 32.306 32.306 0 0 1 88.2 74.7 Z M 88.2 68.4 A 21.111 21.111 0 0 0 94.445 67.501 A 18.695 18.695 0 0 0 98.25 65.85 Q 102.7 63.3 105.2 58.6 A 21.39 21.39 0 0 0 107.544 50.819 A 26.653 26.653 0 0 0 107.7 47.9 A 24.688 24.688 0 0 0 106.994 41.892 A 20.588 20.588 0 0 0 105.2 37.2 Q 102.7 32.5 98.25 29.95 A 19.38 19.38 0 0 0 89.922 27.462 A 23.484 23.484 0 0 0 88.2 27.4 A 21.111 21.111 0 0 0 81.955 28.299 A 18.695 18.695 0 0 0 78.15 29.95 Q 73.7 32.5 71.15 37.2 A 21.137 21.137 0 0 0 68.74 45.159 A 26.256 26.256 0 0 0 68.6 47.9 A 24.136 24.136 0 0 0 69.363 54.074 A 20.313 20.313 0 0 0 71.15 58.6 Q 73.7 63.3 78.15 65.85 A 19.38 19.38 0 0 0 86.478 68.338 A 23.484 23.484 0 0 0 88.2 68.4 Z"
+                  id="1" vector-effect="non-scaling-stroke" class="header-title-2"></path>
+            <path d="M 129.4 74.2 L 129.4 0 L 136.5 0 L 136.5 74.2 L 129.4 74.2 Z" id="2"
+                  vector-effect="non-scaling-stroke" class="header-title-3"></path>
+            <path d="M 196 41.6 L 196 74.2 L 189.2 74.2 L 189.2 66 Q 186.8 70.1 182.15 72.4 A 21.5 21.5 0 0 1 176.376 74.258 A 29.935 29.935 0 0 1 171.1 74.7 A 29.876 29.876 0 0 1 165.357 74.181 Q 161.999 73.523 159.355 72.03 A 16.479 16.479 0 0 1 157.1 70.5 A 13.393 13.393 0 0 1 151.954 60.774 A 17.286 17.286 0 0 1 151.9 59.4 A 14.984 14.984 0 0 1 152.795 54.122 A 13.214 13.214 0 0 1 156.75 48.6 Q 161.405 44.665 171.355 44.507 A 53.037 53.037 0 0 1 172.2 44.5 L 188.9 44.5 L 188.9 41.3 A 19.412 19.412 0 0 0 188.501 37.232 Q 187.961 34.714 186.691 32.82 A 10.717 10.717 0 0 0 185.1 30.95 Q 181.3 27.4 174 27.4 Q 169 27.4 164.4 29.05 A 25.771 25.771 0 0 0 159.158 31.601 A 22.12 22.12 0 0 0 156.5 33.6 L 153.3 28.3 A 26.982 26.982 0 0 1 159.877 24.213 A 32.836 32.836 0 0 1 162.9 23.05 Q 168.5 21.2 174.7 21.2 A 33.042 33.042 0 0 1 180.806 21.728 Q 184.249 22.377 186.951 23.82 A 16.62 16.62 0 0 1 190.5 26.35 A 16.357 16.357 0 0 1 194.947 33.71 Q 195.737 36.313 195.934 39.45 A 34.241 34.241 0 0 1 196 41.6 Z M 188.9 58.4 L 188.9 49.8 L 172.4 49.8 Q 159.27 49.8 158.91 58.692 A 12.568 12.568 0 0 0 158.9 59.2 A 9.696 9.696 0 0 0 159.478 62.616 A 8.484 8.484 0 0 0 162.4 66.45 A 11.852 11.852 0 0 0 166.147 68.307 Q 167.777 68.803 169.734 68.989 A 26.124 26.124 0 0 0 172.2 69.1 A 21.912 21.912 0 0 0 177.288 68.535 A 16.836 16.836 0 0 0 182.5 66.35 A 16.013 16.013 0 0 0 188.247 59.852 A 20.152 20.152 0 0 0 188.9 58.4 Z"
+                  id="3" vector-effect="non-scaling-stroke" class="header-title-4"></path>
+            <path d="M 241.8 21.2 L 241.8 28.1 L 240.1 28 Q 231.8 28 227.1 33.1 Q 222.4 38.2 222.4 47.4 L 222.4 74.2 L 215.3 74.2 L 215.3 21.6 L 222.1 21.6 L 222.1 31.9 Q 224.6 26.6 229.55 23.9 Q 234.5 21.2 241.8 21.2 Z"
+                  id="4" vector-effect="non-scaling-stroke" class="header-title-5"></path>
+            <path d="M 258.8 68.3 L 292.5 68.3 L 292.5 74.2 L 249.7 74.2 L 249.7 69.5 L 282.8 27.6 L 250.3 27.6 L 250.3 21.6 L 291.9 21.6 L 291.9 26.3 L 258.8 68.3 Z"
+                  id="5" vector-effect="non-scaling-stroke" class="header-title-6"></path>
+            <path d="M 351.5 47.9 L 351.4 50.1 L 307.4 50.1 A 20.878 20.878 0 0 0 309.037 56.99 A 18.125 18.125 0 0 0 313.7 63.35 A 19.871 19.871 0 0 0 324.437 68.158 A 26.909 26.909 0 0 0 328.1 68.4 Q 333 68.4 337.1 66.65 Q 341.2 64.9 344.2 61.5 L 348.2 66.1 Q 344.7 70.3 339.45 72.5 Q 334.2 74.7 327.9 74.7 Q 319.8 74.7 313.55 71.25 Q 307.3 67.8 303.8 61.7 A 26.566 26.566 0 0 1 300.385 50.267 A 32.329 32.329 0 0 1 300.3 47.9 A 30.319 30.319 0 0 1 301.42 39.532 A 26.213 26.213 0 0 1 303.65 34.1 Q 307 28 312.85 24.6 A 25.32 25.32 0 0 1 324.532 21.235 A 30.438 30.438 0 0 1 326 21.2 A 26.867 26.867 0 0 1 334.34 22.463 A 24.08 24.08 0 0 1 339.1 24.6 Q 344.9 28 348.2 34.05 A 27.05 27.05 0 0 1 351.281 43.994 A 33.947 33.947 0 0 1 351.5 47.9 Z M 307.4 44.8 L 344.7 44.8 A 21.56 21.56 0 0 0 343.152 38.337 A 17.985 17.985 0 0 0 338.85 32.15 A 17.677 17.677 0 0 0 327.538 27.35 A 23.278 23.278 0 0 0 326 27.3 A 19.641 19.641 0 0 0 319.313 28.401 A 17.311 17.311 0 0 0 313.25 32.15 A 18.508 18.508 0 0 0 307.695 42.607 A 24.408 24.408 0 0 0 307.4 44.8 Z"
+                  id="6" vector-effect="non-scaling-stroke" class="header-title-7"></path>
+            <path d="M 366 74.2 L 366 0 L 373.1 0 L 373.1 74.2 L 366 74.2 Z" id="7" vector-effect="non-scaling-stroke"
+                  class="header-title-8"></path>
+            <path d="M 392.9 74.2 L 392.9 0 L 400 0 L 400 74.2 L 392.9 74.2 Z" id="8" vector-effect="non-scaling-stroke"
+                  class="header-title-9"></path>
+            <path d="M 465.7 47.9 L 465.6 50.1 L 421.6 50.1 A 20.878 20.878 0 0 0 423.237 56.99 A 18.125 18.125 0 0 0 427.9 63.35 A 19.871 19.871 0 0 0 438.637 68.158 A 26.909 26.909 0 0 0 442.3 68.4 Q 447.2 68.4 451.3 66.65 Q 455.4 64.9 458.4 61.5 L 462.4 66.1 Q 458.9 70.3 453.65 72.5 Q 448.4 74.7 442.1 74.7 Q 434 74.7 427.75 71.25 Q 421.5 67.8 418 61.7 A 26.566 26.566 0 0 1 414.585 50.267 A 32.329 32.329 0 0 1 414.5 47.9 A 30.319 30.319 0 0 1 415.62 39.532 A 26.213 26.213 0 0 1 417.85 34.1 Q 421.2 28 427.05 24.6 A 25.32 25.32 0 0 1 438.732 21.235 A 30.438 30.438 0 0 1 440.2 21.2 A 26.867 26.867 0 0 1 448.54 22.463 A 24.08 24.08 0 0 1 453.3 24.6 Q 459.1 28 462.4 34.05 A 27.05 27.05 0 0 1 465.481 43.994 A 33.947 33.947 0 0 1 465.7 47.9 Z M 421.6 44.8 L 458.9 44.8 A 21.56 21.56 0 0 0 457.352 38.337 A 17.985 17.985 0 0 0 453.05 32.15 A 17.677 17.677 0 0 0 441.738 27.35 A 23.278 23.278 0 0 0 440.2 27.3 A 19.641 19.641 0 0 0 433.513 28.401 A 17.311 17.311 0 0 0 427.45 32.15 A 18.508 18.508 0 0 0 421.895 42.607 A 24.408 24.408 0 0 0 421.6 44.8 Z"
+                  id="9" vector-effect="non-scaling-stroke" class="header-title-10"></path>
+            <path d="M 528.6 43.7 L 528.6 74.2 L 521.5 74.2 L 521.5 44.4 Q 521.5 38.666 519.496 34.84 A 12.918 12.918 0 0 0 517.4 31.9 Q 513.496 27.806 506.419 27.61 A 25.995 25.995 0 0 0 505.7 27.6 A 23.159 23.159 0 0 0 500.049 28.252 A 16.213 16.213 0 0 0 492.25 32.65 Q 487.416 37.582 487.303 46.185 A 31.521 31.521 0 0 0 487.3 46.6 L 487.3 74.2 L 480.2 74.2 L 480.2 21.6 L 487 21.6 L 487 31.3 Q 489.9 26.5 495.05 23.85 A 23.65 23.65 0 0 1 502.423 21.528 A 30.887 30.887 0 0 1 507 21.2 A 27.585 27.585 0 0 1 513.724 21.975 A 19.316 19.316 0 0 1 522.75 26.95 A 18.409 18.409 0 0 1 527.44 34.944 Q 528.31 37.837 528.527 41.316 A 38.213 38.213 0 0 1 528.6 43.7 Z"
+                  id="10" vector-effect="non-scaling-stroke" class="header-title-11"></path>
+        </g>
+    </svg>
+    <nav id="header-nav">
+        <a href="solarzellen.html">Solarzellen</a>
+        <a href="über.html">Über</a>
+    </nav>
+</header>
+
+<div id="placeholder"></div>
+
+<div id="main">
+    <h1>Unsere Solarzellen</h1>
+    <div id="solarcells-div">
+
+        <section class="float-section js-scroll slide-top bug" id="solarcell-1">
+            <section class="overview">
+                <div class="overview-div">
+                    <h2>Solarzelle basic</h2>
+                    <p>
+                        Unser Basismodell! Perfekt für Dächer aller Art, für private Familien und Firmen.
+                    </p>
+                    <p>Maße: 60cm x 80cm</p>
+                    <!-- Todo Maße anpassen-->
+                    <p>Erhältlich ab: <span class="price">420,69€</span></p>
+                </div>
+                <img class="overview-image float-image" src="images/Solarcell1.png" alt="">
+                <!-- Todo resize/compress images -->
+                <!-- Todo remove white background from images, maybe put images into a frame -->
+            </section>
+            <section>
+                <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
+                    <h3>Technische Daten</h3>
+                    <img src="images/expand.svg" alt="">
+                </div>
+                <div class="technical-data-fold fold-section">
+                    <div class="js-scroll slide-top bug">
+                        <h3>U-I Kennlinie</h3>
+                        <canvas id="ui-diagram" class="diagram"></canvas>
+                        <p>
+                            x: U in V<br>
+                            y: I in mA
+                        </p>
+                    </div>
+                    <div class="js-scroll slide-top bug">
+                        <h3>U-P Kennlinie</h3>
+                        <canvas id="up-diagram" class="diagram"></canvas>
+                        <p>
+                            x: U in V <br>
+                            y: P in mW
+                        </p>
+                    </div>
+                    <div class="js-scroll slide-top bug">
+                        <h3>Einfallswinkel</h3>
+                        <p>Unsere Solarzellen bieten nicht nur eine hervorragende Effizienz, sondern sind der
+                            Konkurrenz auch beim Einfallswinkel überlegen. </p>
+                        <canvas id="angle-diagram" class="diagram"></canvas>
+                        <p>
+                            x: Winkel in ° <br>
+                            y: U in % von Umax
+                            <!-- Todo Umax lower + smaller -->
+                        </p>
+                        <p>Der optimale Einfallswinkel beträgt 90°</p>
+                    </div>
+                    <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
+                    <div class="js-scroll slide-top bug">
+                        <h3>Weitere Daten</h3>
+                        <!-- Todo outline table -->
+                        <table>
+                            <tr>
+                                <td>MPP (Maximum Power Point)</td>
+                                <td>bei 1,8V mit 0,0288W</td>
+                            </tr>
+                            <tr>
+                                <td>Leerlaufspannung</td>
+                                <td>2,16V</td>
+                            </tr>
+                            <tr>
+                                <td>Kurzschlussspannung</td>
+                                <td>21 mA</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="js-scroll slide-top bug">
+                        <div class="measurement-info">
+                            Infos zum Versuch
+                            <div class="measurement-info-details">
+                                <!-- Todo Schaltplan hinzufügen -->
+                                Versuch durchgeführt mit 12V/20W Halogenlampe mit 30 cm Abstand zu unserer Solarzelle.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="float-section js-scroll slide-top bug" id="solarcell-2">
+            <section class="overview">
+                <div class="overview-div">
+                    <h2>Solarzelle max</h2>
+                    <p>
+                        Unser Basismodell in EXTRAGROß! Ideal für größere Dächer und Flächen. Meist von
+                        professionellen Kunden genutzt.
+                    </p>
+                    <p>Maße: 90cm x 150cm</p>
+                    <p>Bald erhältlich ab: <span class="price">1879,99€</span></p>
+                </div>
+                <img class="overview-image float-image" src="images/Solarcell2.png" alt="">
+            </section>
+            <section>
+                <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
+                    <h3>Technische Daten</h3>
+                    <img src="images/expand.svg" alt="">
+                </div>
+                <div class="technical-data-fold fold-section">
+                    <h3>Noch nicht verfügbar :(</h3>
+                    <p>
+                        Dieses Produkt befindet sich in der finalen Phase der Entwicklung. <br>
+                        Genaue Daten folgen...
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <section class="float-section js-scroll slide-top bug" id="solarcell-3">
+            <section class="overview">
+                <div class="overview-div">
+                    <h2>Solarzelle hexagon</h2>
+                    <p>
+                        Unser neustes Modell ist eine absolute Design-Neuheit. Die Form eines Hexagons
+                        bietet zahlreiche Anordnungsmöglichkeiten. So werden selbst die komplexesten Flächen
+                        möglichst effizient abgedeckt.
+                    </p>
+                    <p>Maße: 50cm x 50cm</p>
+                    <p>Bald erhältlich ab: <span class="price">690,13€</span></p>
+                </div>
+                <img class="overview-image float-image" src="images/Solarcell3.png" alt="">
+            </section>
+            <section>
+                <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
+                    <h3>Technische Daten</h3>
+                    <img src="images/expand.svg" alt="">
+                </div>
+                <div class="technical-data-fold fold-section">
+                    <h3>Noch nicht verfügbar :(</h3>
+                    <p>
+                        Dieses Produkt befindet sich in der finalen Phase der Entwicklung. <br>
+                        Genaue Daten folgen...
+                    </p>
+                </div>
+            </section>
+        </section>
+
+    </div>
+
+</div>
+
+<footer>
+    <nav id="footer-nav">
+        <a href="https://www.youtube.com/channel/UCWI_rlEfGMcQeDi-GkdE2cQ">
+            <img src="images/youtube.png" alt="Youtube">
+            Youtube
+        </a>
+        <a href="https://www.instagram.com/solarxcells">
+            <img src="images/instagram.png" alt="">
+            Instagram
+        </a>
+        <a href="https://github.com/SolarX-web">
+            <img src="images/GitHub.png" alt="">
+            GitHub
+        </a>
+        <a href="https://github.com/SolarX-web/SolarX">
+            <img src="images/GitHub.png" alt="">
+            <span>GitHub Repository</span>
+        </a>
+    </nav>
+    <p id="copyright">©2021 SolarX</p>
+</footer>
+</body>
+</html>
