@@ -88,16 +88,47 @@
             <stop offset="100%" stop-color="#394a8f"/>
         </linearGradient>
     </svg>
-    <img src="images/expand.svg" alt="v" id="scroll-to-main" onclick="scroll_to_main()">
+    <img src="images/expand.svg" alt="v" id="scroll-to-main" onclick="scroll_to('#main')">
 </div>
 
 <div id="main">
-    <div id="start">
-        <h1>Start</h1>
-        <p>Sie haben noch keine Solarzellen oder wollen Ihre alten upgraden?</p>
-        <p>Dann sind sie hier genau richtig!</p>
-        <p>Hier kommen sie zu unseren Solarzellen!</p>
-        <a id="button-solarcells" href="solarzellen.html">Unsere Produkte!</a>
+    <div>
+        <section id="start" class="js-scroll slide-top">
+            <h1>Start</h1>
+            <p>Sie haben noch keine Solarzellen oder wollen Ihre alten upgraden?</p>
+            <p>Dann sind sie hier genau richtig!</p>
+            <p>Hier kommen sie zu unseren Solarzellen!</p>
+            <a id="button-solarcells" href="solarzellen.html">Unsere Produkte!</a><br>
+            <iframe class="js-scroll slide-top" id="video" width="770" height="450"
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+            </iframe>
+        </section>
+
+        <section id="memes">
+            <h2>
+                Das Internet ist überzeugt von uns!
+            </h2>
+            <div id="go-to-memes">
+                <p>
+                Aber schaut selbst, hier ist unsere Top-Auswahl:
+                </p>
+                <img src="images/expand.svg" alt="" onclick="scroll_to('#memes')">
+            </div>
+            <hr>
+            <div class="meme js-scroll slide-top">
+                <img src="images/Ausfahrt SolarX.webp" alt="">
+                <p>Credits: Fichsi Hardtmann</p>
+            </div>
+            <hr>
+            <div class="meme js-scroll slide-top">
+                <img src="images/uiiiiiii memooooo.webp" alt="">
+                <p>Credits: Shush Shush</p>
+            </div>
+        </section>
+
         <div>
             <!--    <section class="scroll-container">-->
             <!--        <div class="scroll-element js-scroll fade">-->
@@ -229,8 +260,8 @@
             <!--    </section>-->
         </div>
     </div>
-
 </div>
+<!-- Todo ganz hochscrollen button-->
 
 <footer>
     <nav id="footer-nav">

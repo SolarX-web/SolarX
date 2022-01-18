@@ -36,7 +36,9 @@ a:hover {
     color: #4b7ad3;
 }
 
-
+hr {
+    border-top-width: 0;
+}
 /*-------------------| Header |-------------------*/
 header {
     /* fixed position */
@@ -188,6 +190,25 @@ footer {
     text-align: center;
 }
 
+#go-to-memes {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.meme {
+
+}
+
+.meme img {
+    width: 100%;
+}
+
+.meme p {
+    margin: 3px;
+    font-size: 10px;
+    color: #696666;
+}
 
 /*-------------------| solarzellen |-------------------*/
 .float-section {
