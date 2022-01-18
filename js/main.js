@@ -11,7 +11,9 @@ function scroll_to(el) {
 /*-------------------|Handle scroll|-------------------*/
 function elementInView(el, offset = 0) {
     let elementTop = el.getBoundingClientRect().top
-
+    if (window.screen.height < 1000) {
+        return (elementTop <= $(window).innerHeight() * (offset + 0.1))
+    }
     return (elementTop <= $(window).innerHeight() * offset)
 }
 
@@ -79,6 +81,7 @@ $(document).ready(function () {
 
     //Coded by COckyChris (aMaZioNg) PS: Please GivE thIS proJecT a Staar ╰(*°▽°*)╯
     sHushi()
+
     function sHushi() {
         setTimeout(function () {
             handleScrollAnimation()
