@@ -39,6 +39,21 @@ a:hover {
 hr {
     border-top-width: 0;
 }
+
+.button {
+    border-radius: 15px;
+    box-shadow: 0 1px 10px #b0b0b0;
+    display: inline-flex;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: #eeeeee
+}
+
+.button span {
+    padding-right: 10px;
+}
 /*-------------------| Header |-------------------*/
 header {
     /* fixed position */
@@ -188,6 +203,15 @@ footer {
 
 #start {
     text-align: center;
+}
+
+#start p {
+    font-size: 25px;
+}
+
+#start h1 {
+    font-size: 64px;
+    margin-bottom: 30px;
 }
 
 #go-to-memes {

@@ -94,11 +94,16 @@
 <div id="main">
     <div>
         <section id="start" class="js-scroll slide-top">
-            <h1>Start</h1>
+            <h1>SolarX</h1>
             <p>Sie haben noch keine Solarzellen oder wollen Ihre alten upgraden?</p>
             <p>Dann sind sie hier genau richtig!</p>
             <p>Hier kommen sie zu unseren Solarzellen!</p>
-            <a id="button-solarcells" href="solarzellen.html">Unsere Produkte!</a><br>
+            <div class="button" onclick="window.open('solarzellen.html', '_self')">
+                <img src="images/arrow right.svg" alt="">
+                <span>Unsere Produkte!</span>
+            </div>
+            <br>
+            <br>
             <iframe class="js-scroll slide-top" id="video" width="770" height="450"
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0"
                     title="YouTube video player" frameborder="0"
@@ -113,9 +118,9 @@
             </h2>
             <div id="go-to-memes">
                 <p>
-                Aber schaut selbst, hier ist unsere Top-Auswahl:
+                    Aber schaut selbst, hier ist unsere Top-Auswahl:
                 </p>
-                <img src="images/expand.svg" alt="" onclick="scroll_to('#memes')">
+                <img class="button" src="images/expand.svg" alt="" onclick="scroll_to('#memes')">
             </div>
             <hr>
             <div class="meme js-scroll slide-top">
