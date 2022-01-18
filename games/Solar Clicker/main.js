@@ -103,7 +103,7 @@ function shop(name, price) {
 
 function upgrade(name, price) {
     items[name + "Price"] = parseInt(price);
-    items[name + "Owned"] = parseInt($("#upgradeOwned" + name).html())
+    items[name + "Owned"] = parseInt($("#upgradeOwned" + name).text())
     let cur_price = items[name + "Price"] * Math.pow(3.5, items[name + "Owned"])
     if (energy >= cur_price) {
         energy -= cur_price
