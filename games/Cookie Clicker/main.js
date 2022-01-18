@@ -109,9 +109,9 @@ function upgrade(name, price) {
         energy -= cur_price
         clickValue *= 3
         items[name + "Owned"] += 1
-        $("#upgradeOwned" + name).innerHTML = items[name + "Owned"]
+        $("#upgradeOwned" + name).text(items[name + "Owned"])
         cur_price *= 3.5
-        $("#upgradePrice" + name).innerHTML = beautify(cur_price);
+        $("#upgradePrice" + name).text(beautify(cur_price))
         document.cookie = name.toLowerCase() + "=" + items[name + "Owned"] + ";" + expires + ";path=/"
 
         sound(buysound, 0.2)
