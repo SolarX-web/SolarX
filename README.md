@@ -1,11 +1,12 @@
-# SolarX Website <img height="35px" align="right" src="https://github.com/SolarX-web/SolarX/raw/develop/images/solarx.png">
+# SolarX Website <img height="35px" align="right" src="https://github.com/SolarX-web/SolarX/raw/main/images/solarx.png">
 
 ---
-`v.1.0.0` 
+`v.1.1.0` 
 `Made by Gromhork & RoRo160, Design by Jasper, Technical Director Jan Ole`
 
 This module website is a school project.
-The task was to 
+The task was to design an advertisement for a solar cell.
+All data was measured by ourselves.
 
 > 💡 **Advise:** <br/> 
 > There are some **EASTEREGGS** on this website!
@@ -19,6 +20,7 @@ The task was to
 - View our solar cells
 - Get informed about their technical data
 - Watch some memes
+- Solar-cell-Clicker game
 
 > ⚠ **Note:**
 > If you notice any bugs please report them at the issues tab!
@@ -26,7 +28,7 @@ The task was to
 
 ### Coming soon:
 
-- Solar-cell-Clicker game
+- There is nothing more planned
 
 > ⚠ **Note:**
 > Please do not copy any images or texts from this website!
