@@ -64,12 +64,9 @@
                         Unser Basismodell! Perfekt für Dächer aller Art, für private Familien und Firmen.
                     </p>
                     <p>Maße: 60cm x 80cm</p>
-                    <!-- Todo Maße anpassen-->
                     <p>Erhältlich ab: <span class="price">420,69€</span></p>
                 </div>
-                <img class="overview-image float-image" src="images/Solarcell1.png" alt="">
-                <!-- Todo resize/compress images -->
-                <!-- Todo remove white background from images, maybe put images into a frame -->
+                <img class="overview-image float-image first" src="images/Solarcell1.png" alt="">
             </section>
             <section>
                 <div class="technical-data-fold-button" onclick="Fold(this.nextElementSibling, this.children[1])">
@@ -100,16 +97,13 @@
                         <canvas id="angle-diagram" class="diagram"></canvas>
                         <p>
                             x: Winkel in ° <br>
-                            y: U in % von Umax
-                            <!-- Todo Umax lower + smaller -->
+                            y: U in % von U<sub>max</sub>
                         </p>
                         <p>Der optimale Einfallswinkel beträgt 90°</p>
                     </div>
-                    <script type="text/javascript" src="js/charts.js"></script> <!-- Todo move script to end -->
                     <div class="js-scroll slide-top bug">
                         <h3>Weitere Daten</h3>
-                        <!-- Todo outline table -->
-                        <table>
+                        <table id="table">
                             <tr>
                                 <td>MPP (Maximum Power Point)</td>
                                 <td>bei 1,8V mit 0,0288W</td>
@@ -174,7 +168,7 @@
                         bietet zahlreiche Anordnungsmöglichkeiten. So werden selbst die komplexesten Flächen
                         möglichst effizient abgedeckt.
                     </p>
-                    <p>Maße: 50cm x 50cm</p>
+                    <p>Maße: 50cm Radius</p>
                     <p>Bald erhältlich ab: <span class="price">690,13€</span></p>
                 </div>
                 <img class="overview-image float-image" src="images/Solarcell3.png" alt="">
@@ -196,7 +190,6 @@
 
     </div>
     <section id="solar-game-tip" class="js-scroll slide-top bug">
-        <!-- Todo doesn't show up in animation -->
         <hr>
         <p>
             Sie können einfach nicht genug von unseren Solarzellen kriegen? <br>
@@ -208,6 +201,7 @@
             <span>Zum Game</span>
         </div>
     </section>
+    <script type="text/javascript" src="js/charts.js"></script>
 </div>
 
 <footer>
