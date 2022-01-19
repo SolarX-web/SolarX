@@ -37,7 +37,8 @@ a:hover {
 }
 
 hr {
-    border-top-width: 0;
+    border-width: 0.5px;
+    border-style: solid;
 }
 
 .button {
@@ -217,10 +218,6 @@ footer {
 #go-to-memes {
     display: flex;
     justify-content: space-between;
-
-}
-
-.meme {
 
 }
 
