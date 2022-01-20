@@ -1,262 +1,265 @@
 * {
-  	margin: 0;
-  	padding: 0;
-	user-select: None;
+    margin: 0;
+    padding: 0;
+    user-select: None;
 }
 
 body {
-  	color: #545454;
-  	display: flex;
-	background: #12181b;
-	color: #fff;
-  	font-family: sans-serif;
-  	justify-content: center;
+    color: #545454;
+    display: flex;
+    background: #12181b;
+    color: #fff;
+    font-family: sans-serif;
+    justify-content: center;
 }
 
 #container {
-	background: #2a2e35;
-	box-shadow: 0px 3px 8px 1px #010101;
-	margin-top: 25px;
-  	padding: 25px;
-  	border-radius: 25px;
-  	width: 95%;
-	height: 80vh;
+    background: #2a2e35;
+    box-shadow: 0px 3px 8px 1px #010101;
+    margin-top: 25px;
+    padding: 25px;
+    border-radius: 25px;
+    width: 95%;
+    height: 80vh;
 }
 
 #title {
-	position: relative;
-	display: grid;
-	place-items: center;
-	margin-bottom: -50px;
+    position: relative;
+    display: grid;
+    place-items: center;
+    margin-bottom: -50px;
 }
 
 #solarcell {
-	position: absolute;
-	height: 250px;
-	width: 250px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	border-radius: 50%;
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
 }
 
 #activateUpgrade {
-	cursor: pointer;
-	position: absolute;
-	top: 28%;
-	right: 96%;
-	transform: translate(100%, -50%);
+    cursor: pointer;
+    position: absolute;
+    top: 28%;
+    right: 96%;
+    transform: translate(100%, -50%);
 }
 
 #upgrade {
-	visibility: hidden;
-	position: absolute;
-	background: #454e56;
-	top: 30%;
-	left: 3%;
-	height: 500px;
-	width: 300px;
-	overflow: auto;
-	z-index: 1;
-	border-radius: 5px;
+    visibility: hidden;
+    position: absolute;
+    background: #454e56;
+    top: 30%;
+    left: 3%;
+    height: 500px;
+    width: 300px;
+    overflow: auto;
+    z-index: 1;
+    border-radius: 5px;
 }
 
 #activateShop {
-	cursor: pointer;
-	position: absolute;
-	top: 28%;
-	right: 2%;
-	transform: translate(-50%, -50%);
+    cursor: pointer;
+    position: absolute;
+    top: 28%;
+    right: 2%;
+    transform: translate(-50%, -50%);
 }
 
 #shop {
-	visibility: hidden;
-	position: absolute;
-	background: #454e56;
-	top: 30%;
-	right: 3%;
-	height: 500px;
-	width: 350px;
-	overflow: auto;
-	border-radius: 5px;
+    visibility: hidden;
+    position: absolute;
+    background: #454e56;
+    top: 30%;
+    right: 3%;
+    height: 500px;
+    width: 350px;
+    overflow: auto;
+    border-radius: 5px;
 }
 
 .item {
-	border: 2px solid black;
-	display: block;
-	text-align: right;
+    border: 2px solid black;
+    display: block;
+    text-align: right;
 }
 
 .item:hover {
-	cursor: pointer;
-	background: #2a2e35;
+    cursor: pointer;
+    background: #2a2e35;
 }
 
 .itemName {
-	position: absolute;
-	font-family: 'Pangolin', cursive;
-	font-size: 35px;
-	color: white;
-	left: 1%;
+    position: absolute;
+    font-family: 'Pangolin', cursive;
+    font-size: 35px;
+    color: white;
+    left: 1%;
 }
 
 .itemPrice {
-	font-size: 20px;
-	color: lawngreen;
+    font-size: 20px;
+    color: lawngreen;
 }
 
 .itemOwned {
-	font-family: 'Pangolin', cursive;
-	font-size: 35px;
-	margin-right: 5px;
-	color: white;
+    font-family: 'Pangolin', cursive;
+    font-size: 35px;
+    margin-right: 5px;
+    color: white;
 }
 
 #secret {
-	position: absolute;
-	height: 10px;
-	width: 10px;
+    position: absolute;
+    height: 10px;
+    width: 10px;
 }
 
 #settings {
-	position: relative;
-	display: inline-flex;
-	top: 2%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size: 22px;
+    position: relative;
+    display: inline-flex;
+    top: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
 }
 
 #BGMusicB:hover, #soundB:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 #soundB, #BGMusicB {
-	margin-right: 20px;
-	margin-left: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
 #BGMusicB {
-	color: #545454;
+    color: #545454;
 }
 
 .soundSettings {
-	display: block;
+    display: block;
 }
 
 #BGMSlider {
-	appearance: none;
-	width: 150px;
-	height: 15px;
-	background: #d3d3d3;
-	cursor: pointer;
-	margin-left: 30px;
-	border-radius: 10px;
+    appearance: none;
+    width: 150px;
+    height: 15px;
+    background: #d3d3d3;
+    cursor: pointer;
+    margin-left: 30px;
+    border-radius: 10px;
 }
 
 #BGMSlider::-moz-range-thumb, #BGMSlider::-webkit-slider-thumb {
-	appearance: none;
-	appearance: none;
-	width: 15px;
-	height: 15px;
-	background: #4CAF50;
-	cursor: pointer;
+    appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #4CAF50;
+    cursor: pointer;
 }
 
 @media (max-width: 1400px) {
-	#container {
-		width: 90%;
-	}
+    #container {
+        width: 90%;
+    }
 }
 
 @media (max-width: 750px) {
-	#container {
-		width: 85%;
-	}
+    #container {
+        width: 85%;
+    }
 
-	#title {
-		font-size: 24px;
-	}
+    #title {
+        font-size: 24px;
+    }
 
-	#energyScore, #activateShop, #activateUpgrade {
-		margin-top: 10px;
-		font-size: 20px;
-	}
+    #energyScore, #activateShop, #activateUpgrade {
+        margin-top: 10px;
+        font-size: 20px;
+    }
 
-	#energyPerSecond {
-		font-size: 16px;
-	}
+    #energyPerSecond {
+        font-size: 16px;
+    }
 
-	#energyPerClick {
-		font-size: 12px;
-	}
+    #energyPerClick {
+        font-size: 12px;
+    }
 
-	#cookie {
-		top: 55%;
-	}
+    #cookie {
+        top: 55%;
+    }
 
-	#BGMusicB, #BGMSlider {
-		display: none;
-	}
+    #settings {
+        top: 85%;
+        font-size: 18px;
+    }
 
-	#BGMSlider {
-		margin-left: 25px;
-	}
+    #BGMSlider {
+        width: 130px;
+        height: 10px;
+        margin: 10px 0 0 25px;
+    }
 
-	#upgrade, #shop {
-		top: 32%;
-		width: 40%;
-		height: 60%;
-	}
+    #upgrade, #shop {
+        top: 32%;
+        width: 40%;
+        height: 60%;
+    }
 
-	.itemName {
-		font-size: 25px;
-	}
+    .itemName {
+        font-size: 25px;
+    }
 
-	.itemPrice {
-		font-size: 15px;
-	}
+    .itemPrice {
+        font-size: 15px;
+    }
 
-	.itemOwned {
-		font-size: 25px;
-	}
+    .itemOwned {
+        font-size: 25px;
+    }
 }
 
 @media (max-width: 550px) {
-	#title {
-		font-size: 20px;
-	}
+    #title {
+        font-size: 20px;
+    }
 
-	#settings {
-		margin-top: -10px;
-	}
+    #settings {
+        margin-top: -10px;
+    }
 
-	#stats {
-		margin-top: 20px;
-		margin-left: -10px;
-	}
+    #stats {
+        margin-top: 20px;
+        margin-left: -10px;
+    }
 
-	#stats h2 {
-		font-size: 16px;
-	}
+    #stats h2 {
+        font-size: 16px;
+    }
 
-	#stats h3 {
-		font-size: 14px;
-	}
+    #stats h3 {
+        font-size: 14px;
+    }
 
-	#stats h4 {
-		font-size: 12px;
-	}
+    #stats h4 {
+        font-size: 12px;
+    }
 
-	.itemName {
-		font-size: 16px;
-	}
+    .itemName {
+        font-size: 16px;
+    }
 
-	.itemPrice {
-		font-size: 8px;
-	}
+    .itemPrice {
+        font-size: 8px;
+    }
 
-	.itemOwned {
-		font-size: 16px;
-	}
+    .itemOwned {
+        font-size: 16px;
+    }
 }

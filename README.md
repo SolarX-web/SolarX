@@ -1,7 +1,7 @@
 # SolarX Website <img height="35px" align="right" src="https://github.com/SolarX-web/SolarX/raw/main/images/solarx.png">
 
 ---
-`v.1.1.0` 
+`v.1.2.0` 
 `Made by Gromhork & RoRo160, Design by Jasper, Technical Director Jan Ole`
 
 This module website is a school project.

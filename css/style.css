@@ -55,6 +55,18 @@ hr {
 .button span {
     padding-right: 10px;
 }
+
+table {
+    border-radius: 3px;
+    margin-bottom: 5px;
+    background-color: #919191;
+}
+
+td {
+    padding-right: 4px;
+    background-color: #f2f2f2;
+}
+
 /*-------------------| Header |-------------------*/
 header {
     /* fixed position */
@@ -240,7 +252,7 @@ footer {
 }
 
 .float-image {
-/*    Todo float image*/
+    /*    Todo float image*/
 }
 
 .fold-section {
@@ -271,9 +283,31 @@ footer {
     height: 250px;
 }
 
+.overview-image.first {
+    margin-top: 15px;
+    height: 200px;
+}
+
 .price {
-    font-weight: bold;
-    /* Todo Animation */
+    display: inline-block;
+    color: mediumseagreen;
+    margin-left: 6px;
+    animation: priceAnim 0.7s ease-out 0s infinite alternate;
+    transform: scale(1.08);
+}
+
+@keyframes priceAnim {
+    1% {
+        transform: scale(1.08);
+    }
+
+    90% {
+        transform: scale(1.19);
+    }
+
+    100% {
+        transform: scale(1.2);
+    }
 }
 
 .technical-data-fold-button {
@@ -326,6 +360,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
 }
+
 #about-solarx {
     display: flex;
     justify-content: space-between;
