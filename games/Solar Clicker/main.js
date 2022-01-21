@@ -130,7 +130,7 @@ function load() {
     for (i = 0; i < upgradesName.length; i++) {
         upgradesPrice[i] = $("#upgradePrice" + upgradesName[i]).text()
     }
-    var shopsName = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    var shopsName = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15"]
     var shopsPrice = []
     for (i = 0; i < shopsName.length; i++) {
         shopsPrice[i] = $("#productPrice" + shopsName[i]).text()
@@ -233,8 +233,26 @@ function beautify(number) {
     } else if (number < Math.pow(10, 30)) {
         number /= Math.pow(10, 27)
         return Math.round(number * 100) / 100 + " Quadrilliarde"
+    } else if (number < Math.pow(10, 33)) {
+        number /= Math.pow(10, 30)
+        return Math.round(number * 100) / 100 + " Quintillion"
+    } else if (number < Math.pow(10, 36)) {
+        number /= Math.pow(10, 33)
+        return Math.round(number * 100) / 100 + " Quintilliarde"
+    } else if (number < Math.pow(10, 39)) {
+        number /= Math.pow(10, 36)
+        return Math.round(number * 100) / 100 + " Sextillion"
+    } else if (number < Math.pow(10, 42)) {
+        number /= Math.pow(10, 39)
+        return Math.round(number * 100) / 100 + " Sextilliarde"
+    } else if (number < Math.pow(10, 45)) {
+        number /= Math.pow(10, 42)
+        return Math.round(number * 100) / 100 + " Septillion"
+    } else if (number < Math.pow(10, 48)) {
+        number /= Math.pow(10, 45)
+        return Math.round(number * 100) / 100 + " Septiliiarde"
     } else {
-        return Math.round(number)
+        return Math.round(number).toString().replace("e", "shush")
     }
 }
 
