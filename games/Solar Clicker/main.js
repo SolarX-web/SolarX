@@ -252,7 +252,7 @@ function beautify(number) {
         number /= Math.pow(10, 45)
         return Math.round(number * 100) / 100 + " Septiliiarde"
     } else {
-        return Math.round(number).toString().replace("e", "shush")
+        return Math.round(number).toString().replace("e", " Shush")
     }
 }
 
